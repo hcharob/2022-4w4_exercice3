@@ -437,6 +437,10 @@ h1, h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -481,11 +485,11 @@ COMPOSANTES
 }
 
 .formation__liste .jeu {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=videogame_asset");
 }
 
 .formation__liste .design {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=design_services");
 }
 
 .formation__liste .creation-3d {
@@ -493,11 +497,11 @@ COMPOSANTES
 }
 
 .formation__liste .utilitaire {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=business_center");
 }
 
 .formation__liste .video {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=camera_alt");
 }
 
 .formation__cours {
@@ -735,7 +739,6 @@ Navigation catégorie cours
 .menu-categorie_cours-container .menu .menu-item a .menu-item-description {
   text-transform: none;
   color: #222426;
-  font-size: 0.8rem;
 }
 
 .menu-categorie_cours-container .menu .menu-item a:hover {

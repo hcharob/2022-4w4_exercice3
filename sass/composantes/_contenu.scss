@@ -26,23 +26,24 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
+        
         .web {
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
         }
         .jeu{
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
         }
         .design{
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=design_services');
         }
         .creation-3d{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
         }
         .utilitaire{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=business_center');
         }
         .video{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=camera_alt');
         }
     }
     
