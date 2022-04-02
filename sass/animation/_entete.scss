@@ -1,0 +1,57 @@
+.animation{
+    display : flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 3vh 0 4vh 3vw;
+
+    /** Style des cercles avec le mixin **/
+    @mixin cercle-animes {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: $color__anim1;
+        font-weight: bold;
+        background-color: $color__anim2;
+        box-shadow: 5px 5px $color__anim4, 10px 10px $color__anim5;
+      }
+
+    &__bloc {
+        @include cercle-animes;
+        animation: anim_bloc 2s ease-in-out infinite;    
+    }
+
+    &__bloc:nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+
+    &__bloc:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+
+    &__bloc:nth-of-type(4) {
+        animation-delay: 0.6s;
+    }
+
+    &__bloc:nth-of-type(5) {
+        animation-delay: 0.8s;
+    }
+
+    @keyframes anim_bloc {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        50% {
+            transform: translate(0, 20px);
+    
+        }
+    
+        100% {
+            transform: translate(0, 0);
+    
+        }
+    }
+}

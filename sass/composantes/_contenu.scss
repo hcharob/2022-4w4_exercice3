@@ -1,0 +1,90 @@
+ /** Contenu principal **/
+.principal {
+    border: 2px solid $color__background-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h2 {
+        font: italic bold 2rem $font__titre;
+        text-transform: uppercase;
+        color: $color__font-main;
+        text-align: center;
+    }
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+
+    &__titre {
+        font-size: 2rem;
+        color: $color__font-main;
+        margin: 10px 0px;
+        font-family: $font__titre;
+    }
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+        .web {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+        }
+        .jeu{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+        }
+        .design{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+        }
+        .creation-3d{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+        }
+        .utilitaire{
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+        }
+        .video{
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+        }
+    }
+    
+    &__cours {
+        background-color: $color__background-cours;
+        background-position: 95% 3%;
+        background-repeat: no-repeat;
+        margin: 10px;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: box-shadow 0.2s, transform 0.5s;
+
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
+    }
+
+    &__cours:hover {  
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px $color__background-link;
+    }
+}
+
+.cours__titre {
+    font-size: 1.5rem;
+    color: $color__font-main;
+    margin: 5px 0px;
+}
+
+.cours__sigle {
+    font-size: 1.2rem;
+    color: $color__font-sigle;
+    margin: 0;
+}
+
+.cours__description {
+    font-size: 1rem;
+}
+

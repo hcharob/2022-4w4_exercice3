@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------
+Navigation catégorie cours
+------------------------------------------------------------ */
+.menu-categorie_cours-container {
+    background-color: $color__bouton__background;
+    width: 95%;
+    .menu { //ul
+        display: flex;
+        flex-direction: column;
+       
+        .menu-item { //li
+            padding: 0.5rem;
+            width: 100%;
+            border-left: 5px solid #222426;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+
+            a {
+                display : block;
+                padding : 0.2rem;
+                color: $color__bouton__color;
+                transition: transform 0.3s;
+                
+                .menu-item-description {
+                    text-transform: none;
+                    color: #222426;
+                    font-size: 0.8rem;
+                }
+            }    
+        
+            a:hover {  
+                transform: translate(0, 3px);
+            }
+        }
+
+        
+       
+    }
+    @media screen and (min-width : $largeur__media--tablette){
+         .menu {
+             flex-direction: row;
+         }  
+    }
+}

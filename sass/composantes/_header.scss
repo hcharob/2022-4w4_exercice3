@@ -1,0 +1,71 @@
+/** Style du header **/
+.site__header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color__background-header;
+  color: $color__font-header;
+
+  &__titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width : $largeur__media--tablette) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: 3vw;
+
+      .custom-logo-link {
+        margin-right: auto;
+        padding-left: 2vw;
+      }
+    }
+  }
+
+  /** Mixin pour les titres **/
+  @mixin titre {
+    font-size: clamp(2rem, 2vw, 4rem);
+    font-family: $font__titre;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+
+  .header__titre {
+    @include titre;
+    text-shadow: -4px 4px $color__font-header;
+  }
+
+  .header__description {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: $font__main;
+    text-transform: uppercase;
+    color: $color__font-header;
+    text-align: center;
+    padding-left: 2rem;
+  }
+}
+
+/** Deuxième boîte avec les widgets **/
+.util {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width : 90%;
+  
+  @media screen and (min-width: $largeur__media--tablette) {
+    margin-left: auto;
+    padding-right: 2rem;
+    width : 350px;
+  }
+
+  .util__lien {
+    display: flex;
+    justify-content: space-around;
+    color: $color__font-header;
+    gap: 1rem;
+  }
+}

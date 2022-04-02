@@ -1,0 +1,60 @@
+/** Animation de la rotation **/
+@keyframes animRotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+/** Style général des cercles **/
+.ligneCercle {
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animRotation 7s linear infinite;
+}
+
+/** Premier cercle **/
+#ligne1 {
+    border: 15px solid $color__anim5;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 250px;
+    height: 250px;
+}
+
+/** Deuxième cercle **/
+#ligne2 {
+    border: 15px solid $color__anim2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 200px;
+    height: 200px;
+    animation-delay: 1s;
+}
+
+/** Troisième cercle **/
+#ligne3 {
+    border: 10px solid $color__anim3;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 150px;
+    height: 150px;
+    animation-delay: 1.25s;
+}
+
+/** Quatrième cercle **/
+#ligne4 {
+    border: 10px solid $color__anim3;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1.50s;
+}

@@ -1,0 +1,1250 @@
+@charset "UTF-8";
+/*
+Theme Name: 2022-4w4 lab5_Charbonneau-Robichaud_Hervee
+Author: Hervee Charbonneau-Robichaud
+Author URI: https://github.com/hcharob/2022-4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+/* ---------------- COULEURS GÉNÉRALES POUR LE BACKGROUND */
+/* ---------------- COULEURS DES LIENS GÉNÉRAUX */
+/* ---------------- LIENS ET COULEURS POUR LE FOOTER */
+/* ---------------- LIENS ET COULEURS POUR LE HEADER  */
+/* ---------------- COULEURS DES POLICES*/
+/* ---------------- COULEURS DES ANIMATIONS */
+/* ---------------- BOUTONS LIENS */
+/* ------------------------------------- points de rupture des media queries */
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+/** Mixin pour les liens **/
+a {
+  color: #222426;
+}
+
+a:visited {
+  color: #222426;
+}
+
+a:hover, a:focus, a:active {
+  color: #3674ED;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: #3674ED;
+}
+
+.site__footer a:visited {
+  color: #CF59D3;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #F2F2F2;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.header__titre a {
+  color: #F2F2F2;
+}
+
+.header__titre a:visited {
+  color: #F2F2F2;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #CF59D3;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+/** Contenu principal **/
+.principal {
+  border: 2px solid #222426;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal h2 {
+  font: italic bold 2rem "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+}
+
+.formation__titre {
+  font-size: 2rem;
+  color: #F2F2F2;
+  margin: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formation__liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__cours {
+  background-color: #F2F2F2;
+  background-position: 95% 3%;
+  background-repeat: no-repeat;
+  margin: 10px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: box-shadow 0.2s, transform 0.5s;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
+}
+
+.formation__cours:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px #CF59D3;
+}
+
+.cours__titre {
+  font-size: 1.5rem;
+  color: #F2F2F2;
+  margin: 5px 0px;
+}
+
+.cours__sigle {
+  font-size: 1.2rem;
+  color: #3674ED;
+  margin: 0;
+}
+
+.cours__description {
+  font-size: 1rem;
+}
+
+/** Style du header **/
+.site__header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3674ED;
+  color: #222426;
+  /** Mixin pour les titres **/
+}
+
+.site__header__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__titre {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3vw;
+  }
+  .site__header__titre .custom-logo-link {
+    margin-right: auto;
+    padding-left: 2vw;
+  }
+}
+
+.site__header .header__titre {
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-shadow: -4px 4px #222426;
+}
+
+.site__header .header__description {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #222426;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+/** Deuxième boîte avec les widgets **/
+.util {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .util {
+    margin-left: auto;
+    padding-right: 2rem;
+    width: 350px;
+  }
+}
+
+.util .util__lien {
+  display: flex;
+  justify-content: space-around;
+  color: #222426;
+  gap: 1rem;
+}
+
+/** Style de la navigation **/
+#burger {
+  transition: transform .3s;
+  transform: rotate(0);
+  border-radius: 4px;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  cursor: pointer;
+}
+
+#burger svg {
+  color: white;
+}
+
+/** Style pour le menu burger **/
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+  margin-left: 3vw;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal-container, .footer__liens {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal-container a, .footer__liens a {
+  display: block;
+  padding: 4px;
+  color: #F2F2F2;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.menu-principal-container a:hover, .footer__liens a:hover {
+  background-color: #F2F2F2;
+  color: #3674ED;
+}
+
+.menu-principal-container a:hover, .footer__liens a:hover {
+  transform: translate(7px, 0);
+}
+
+@media screen and (min-width: 1100px) {
+  #burger {
+    display: none;
+  }
+  .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------
+Navigation catégorie cours
+------------------------------------------------------------ */
+.menu-categorie_cours-container {
+  background-color: #CF59D3;
+  width: 95%;
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  padding: 0.5rem;
+  width: 100%;
+  border-left: 5px solid #222426;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  display: block;
+  padding: 0.2rem;
+  color: #F2F2F2;
+  transition: transform 0.3s;
+}
+
+.menu-categorie_cours-container .menu .menu-item a .menu-item-description {
+  text-transform: none;
+  color: #222426;
+  font-size: 0.8rem;
+}
+
+.menu-categorie_cours-container .menu .menu-item a:hover {
+  transform: translate(0, 3px);
+}
+
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu {
+    flex-direction: row;
+  }
+}
+
+.menu-menu_accueil-container {
+  z-index: 15;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  padding: 1rem;
+  margin: 0 15px 0 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border-left: 2px solid white;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  font-size: 2rem;
+  color: #F2F2F2;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-menu_accueil-container .menu-item:hover {
+  background-color: #222426;
+  transform: translateY(-10px);
+}
+
+/** Style du footer **/
+.site__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F2F2F2;
+  padding-bottom: 1rem;
+}
+
+.site__footer h2 {
+  font-size: 2rem;
+}
+
+.site__footer h3 {
+  font-size: 1rem;
+}
+
+.site__footer svg {
+  color: #F2F2F2;
+}
+
+.site__footer__menu__ul {
+  display: flex;
+  justify-content: center;
+}
+
+.site__footer__menu__ul ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.site__footer__menu__ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site__footer__colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 85%;
+  margin-top: 1rem;
+  /** Deuxième boîte avec les widgets **/
+  /** Troisième boîte avec les widgets **/
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-direction: row;
+    width: 100vw;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding-left: 1rem;
+  color: #222426;
+}
+
+.site__footer__colonne section:nth-of-type(2) a {
+  color: #3674ED;
+}
+
+.site__footer__colonne section:nth-of-type(2) li {
+  padding: 5px;
+}
+
+.site__footer__colonne section:nth-of-type(3) {
+  background-color: #F2F2F2;
+}
+
+.site__footer__colonne section:nth-of-type(3) a {
+  color: #222426;
+  transition: transform 0.3s;
+}
+
+.site__footer__colonne section:nth-of-type(3) a:hover {
+  background-color: #CF59D3;
+}
+
+.site__footer__colonne__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__footer #menu-liens_externes {
+  background-color: #F2F2F2;
+}
+
+/** Icônes du footer **/
+.wp-block-social-link a {
+  background-color: #3674ED;
+  border-radius: 50%;
+}
+
+/** Page 404 **/
+.erreur-404 h1 {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/** Style de la barre de recherche **/
+.recherche {
+  background-color: #F2F2F2;
+  width: 300px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  box-shadow: -3px 3px #3674ED, 3px -3px #CF59D3;
+}
+
+.recherche__input {
+  background-color: transparent;
+  width: 90%;
+  border: none;
+  transition: background-color 0.25s;
+}
+
+.recherche__input:focus {
+  background-color: #222426;
+  color: #F2F2F2;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.recherche__bouton svg {
+  color: #222426;
+}
+
+header .recherche {
+  box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
+}
+
+.article {
+  padding: 1rem 3rem 1rem 1rem;
+  line-height: 1.2;
+}
+
+.titreSingle {
+  font-size: 4rem;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 3vh 0 4vh 3vw;
+  /** Style des cercles avec le mixin **/
+}
+
+.animation__bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #222426;
+  font-weight: bold;
+  background-color: #3674ED;
+  box-shadow: 5px 5px #CF59D3, 10px 10px #F2F2F2;
+  animation: anim_bloc 2s ease-in-out infinite;
+}
+
+.animation__bloc:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.animation__bloc:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+.animation__bloc:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+.animation__bloc:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes anim_bloc {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/** Animation de la rotation **/
+@keyframes animRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** Style général des cercles **/
+.ligneCercle {
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animRotation 7s linear infinite;
+}
+
+/** Premier cercle **/
+#ligne1 {
+  border: 15px solid #F2F2F2;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  width: 250px;
+  height: 250px;
+}
+
+/** Deuxième cercle **/
+#ligne2 {
+  border: 15px solid #3674ED;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  width: 200px;
+  height: 200px;
+  animation-delay: 1s;
+}
+
+/** Troisième cercle **/
+#ligne3 {
+  border: 10px solid #3D8BF2;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 150px;
+  height: 150px;
+  animation-delay: 1.25s;
+}
+
+/** Quatrième cercle **/
+#ligne4 {
+  border: 10px solid #3D8BF2;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1.50s;
+}
+
+/** Style des carrés avec le mixin **/
+.animation__carres {
+  width: 40px;
+  height: 40px;
+  background-color: #222426;
+  animation: animCarres 2.5s ease-in-out infinite;
+}
+
+/** Animation des carrés **/
+@keyframes animCarres {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, -200px) rotate(0deg);
+    background-color: #F2F2F2;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+    background-color: #222426;
+  }
+}
+
+/** Ajout d'un délai pour chaque carré **/
+.animation__carres:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.animation__carres:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.animation__carres:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.animation__carres:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.animation__carres:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+.animation__carres:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+
+.animation2 {
+  width: 400px;
+  height: 400px;
+  background-color: #3674ED;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/** Style des cercles dans la page single.php avec un mixin **/
+/** Style des cercles avec le mixin **/
+.animation__cercle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  animation: animCercle 3s ease-in-out infinite;
+}
+
+@keyframes animCercle {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 100px) rotate(0deg);
+    background-color: #222426;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+    background-color: #F2F2F2;
+  }
+}
+
+/** Ajout d'un délai pour chaque cercle **/
+.animation__cercle:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.animation__cercle:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.animation__cercle:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.animation__cercle:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.animation__cercle:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+.animation__cercle:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+
+.animation3 {
+  width: 100%;
+  height: 300px;
+  background-color: #F2F2F2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+/** Style général et layout de la page **/
+.site {
+  background-color: #222426;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #3674ED;
+}
+
+.site__barre {
+  grid-area: sidebar;
+  background-color: #222426;
+}
+
+.site__main {
+  grid-area: main;
+  background-color: #222426;
+  position: relative;
+  z-index: 3;
+  color: #F2F2F2;
+}
+
+.site__main .cours__desc {
+  color: #222426;
+}
+
+.site__main p, .site__main h2, .site__main section {
+  z-index: 2;
+}
+
+.site__main svg:first-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #222426;
+}
+
+.site {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

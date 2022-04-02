@@ -1,0 +1,42 @@
+/** Style de la barre de recherche **/
+.recherche {
+    background-color: $color__link-recherche;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    box-shadow: -3px 3px $color__anim2, 3px -3px $color__anim4;
+
+    &__input {
+        background-color: transparent;
+        width: 90%;
+        border: none;
+        transition: background-color 0.25s;
+    }
+
+    &__input:focus {
+        background-color: $color__link;
+        color: $color__link-recherche;
+    }
+
+    &__bouton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 30px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        svg {
+            color: $color__link;
+        }
+    }
+}
+
+header .recherche {
+    box-shadow: -3px 3px $color__link, 3px -3px $color__background-link;
+}

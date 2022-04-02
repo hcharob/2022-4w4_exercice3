@@ -1,0 +1,65 @@
+/** Style des carrés avec le mixin **/
+@mixin mixin404-carres {
+    width: 40px;
+    height: 40px;
+    background-color: $color__anim1;
+    animation: animCarres 2.5s ease-in-out infinite;
+  }
+
+.animation__carres {
+    @include mixin404-carres;    
+}
+
+/** Animation des carrés **/
+@keyframes animCarres {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0, -200px) rotate(0deg);
+        background-color: $color__anim5;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        background-color: $color__anim1;
+    }
+}
+
+/** Ajout d'un délai pour chaque carré **/
+.animation__carres:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.animation__carres:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.animation__carres:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.animation__carres:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+.animation__carres:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+.animation__carres:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+.animation2 {
+    width: 400px;
+    height: 400px;
+    background-color: $color__anim2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+

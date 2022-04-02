@@ -1,0 +1,65 @@
+ /** Style des cercles dans la page single.php avec un mixin **/
+@mixin mixinsingle-cercles {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $color__anim5;
+    animation: animCercle 3s ease-in-out infinite;
+  }
+
+  /** Style des cercles avec le mixin **/
+.animation__cercle {
+    @include mixinsingle-cercles;     
+}
+
+@keyframes animCercle{
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0, 100px) rotate(0deg);
+        background-color: $color__anim1;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        background-color: $color__anim5;
+    }
+}
+
+/** Ajout d'un délai pour chaque cercle **/
+.animation__cercle:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.animation__cercle:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.animation__cercle:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.animation__cercle:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+.animation__cercle:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+.animation__cercle:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+.animation3 {
+    width: 100%;
+    height: 300px;
+    background-color: $color__anim5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
