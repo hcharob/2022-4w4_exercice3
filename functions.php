@@ -1,6 +1,4 @@
-<?php 
-
-function cidw_4w4_enqueue(){
+<?php function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_style('cidw-4w4-google-font', "https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Poppins&family=Roboto&display=swap", false);
