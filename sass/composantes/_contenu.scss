@@ -27,8 +27,10 @@
         display: flex;
         flex-wrap: wrap;
         
+        
         .web {
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+            
         }
         .jeu{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
@@ -44,6 +46,11 @@
         }
         .video{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=camera_alt');
+           
+        }
+
+        .web, .jeu, .design, .creation-3d, .utilitaire, .video {
+            background-size: 40px 40px;
         }
     }
     

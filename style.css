@@ -504,6 +504,10 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=camera_alt");
 }
 
+.formation__liste .web, .formation__liste .jeu, .formation__liste .design, .formation__liste .creation-3d, .formation__liste .utilitaire, .formation__liste .video {
+  background-size: 40px 40px;
+}
+
 .formation__cours {
   background-color: #F2F2F2;
   background-position: 95% 3%;
@@ -713,7 +717,7 @@ Navigation catégorie cours
 ------------------------------------------------------------ */
 .menu-categorie_cours-container {
   background-color: #CF59D3;
-  width: 95%;
+  width: 93%;
 }
 
 .menu-categorie_cours-container .menu {
