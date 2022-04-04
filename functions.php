@@ -121,9 +121,51 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
-}
 
+    /**
+     * $query contient la requête mysql qui permet d'extraire le contenu de la nouvelle page que l'on tente d'accéder
+     * @param : WP_Query $query
+     */
+    function cidw_4w4_pre_get_posts(WP_Query $query)
+    {
+         $ordre = get_query_var('ordre');
+         $cle = get_query_var('cletri');
+         echo "-----".$ordre. "-----" .$cle;
 
+        if (!is_admin() && is_main_query() && is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video', 'creation-3d'))) {
+            $query->set('posts_per_page', -1);
+            $query->set('orderby', 'title');
+            $query->set('order',  'ASC');
+            // var_dump($query);
+            // die();
+        }
+        
 
-?>
+    // if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    //     {
+    //     //$ordre = get_query_var('ordre');
+        // $query->set('posts_per_page', -1);
+    //     // $query->set('orderby', $cle);
+        // $query->set('orderby', 'title');
+    //     // $query->set('order',  $ordre);
+        // $query->set('order',  'ASC');
+    //     // var_dump($query);
+    //     // die();
+    //     }
+
+    }
+    function cidw_4w4_query_vars($params){
+        $params[] = "cletri";
+        $params[] = "ordre";
+        //$params["cletri"] = "title";
+        //var_dump($params); die();
+        return $params;
+    }
+    add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+    // pre_get_posts est un hook qui marque l'instant se situant entre la création de requête $query et son exécution
+    // pre_get_posts est notre dernière chance (oh noes!) de modifier la requête $query
+    // IMPORTANT
+    add_filter('query_vars', 'cidw_4w4_query_vars' );
+    }
+    ?>
 

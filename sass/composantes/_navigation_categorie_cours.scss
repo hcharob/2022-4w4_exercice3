@@ -30,11 +30,9 @@ Navigation catégorie cours
             a:hover {  
                 transform: translate(0, 5px);
             }
-        }
-
-        
-       
+        } 
     }
+    
     @media screen and (min-width : $largeur__media--tablette){
          .menu {
              flex-direction: row;
