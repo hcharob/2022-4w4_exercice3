@@ -55,6 +55,7 @@
     
     &__cours {
         background-color: $color__background-cours;
+        border: 2px solid #F2B1A2;
         background-position: 95% 3%;
         background-repeat: no-repeat;
         margin: 10px;
@@ -81,13 +82,13 @@
 
 .cours__titre {
     font-size: 1.5rem;
-    color: $color__font-main;
+    color: #F25E6B;
     margin: 5px 0px;
 }
 
 .cours__sigle {
     font-size: 1.2rem;
-    color: $color__font-sigle;
+    color: #F29F05;
     margin: 0;
 }
 
