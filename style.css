@@ -445,6 +445,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -580,7 +584,9 @@ COMPOSANTES
   }
   .site__header__titre .custom-logo-link {
     margin-right: auto;
-    padding-left: 2vw;
+    padding: 0.5vw;
+    height: 100%;
+    width: auto;
   }
 }
 
@@ -756,11 +762,16 @@ Navigation catégorie cours
 }
 
 .menu-menu_accueil-container {
+  padding-top: 2rem;
   z-index: 15;
 }
 
 .menu-menu_accueil-container .menu {
   display: flex;
+}
+
+.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000");
 }
 
 .menu-menu_accueil-container .menu .menu-item {
@@ -769,15 +780,40 @@ Navigation catégorie cours
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
   border-left: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-menu_accueil-container .menu .menu-item a {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1vw, 2rem);
   color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .menu-menu_accueil-container .menu .menu-item a .menu-item-description {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  text-transform: none;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid black;
+  margin: 1rem;
+  height: 100%;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.menu-menu_accueil-container .menu hr {
+  width: 100%;
+  color: red;
 }
 
 .menu-menu_accueil-container .menu-item:hover {

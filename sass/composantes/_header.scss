@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: $color__background-header;
   color: $color__font-header;
-
+  
   &__titre {
     display: flex;
     flex-direction: column;
@@ -20,7 +20,9 @@
 
       .custom-logo-link {
         margin-right: auto;
-        padding-left: 2vw;
+        padding: 0.5vw;
+        height: 100%;
+        width: auto;
       }
     }
   }
