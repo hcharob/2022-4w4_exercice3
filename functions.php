@@ -2,7 +2,6 @@
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_style('cidw-4w4-google-font', "https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Poppins&family=Roboto&display=swap", false);
-    
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -52,9 +51,6 @@ function cidw_4w4_add_theme_support() {
 }
 
 add_action ('after_setup_theme', 'cidw_4w4_add_theme_support');
-
-
-
 
 /* ____________________________________________________________________________ Enregistrement des sidebars */
 
@@ -125,47 +121,54 @@ function my_register_sidebars() {
     /**
      * $query contient la requête mysql qui permet d'extraire le contenu de la nouvelle page que l'on tente d'accéder
      * @param : WP_Query $query
+     * @return l'objet WP_query
      */
     function cidw_4w4_pre_get_posts(WP_Query $query)
     {
-         $ordre = get_query_var('ordre');
-         $cle = get_query_var('cletri');
-         echo "-----".$ordre. "-----" .$cle;
+        //  $ordre = get_query_var('ordre');
+        //  $cle = get_query_var('cletri');
+        //  echo "-----".$ordre. "-----" .$cle;
 
-        if (!is_admin() && is_main_query() && is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video', 'creation-3d'))) {
-            $query->set('posts_per_page', -1);
-            $query->set('orderby', 'title');
-            $query->set('order',  'ASC');
-            // var_dump($query);
-            // die();
+        if (is_admin() 
+        || !is_main_query() 
+        || !is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video', 'creation-3d')))   {
+            return $query;
         }
-        
 
-    // if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
-    //     {
-    //     //$ordre = get_query_var('ordre');
-        // $query->set('posts_per_page', -1);
-    //     // $query->set('orderby', $cle);
-        // $query->set('orderby', 'title');
-    //     // $query->set('order',  $ordre);
-        // $query->set('order',  'ASC');
-    //     // var_dump($query);
-    //     // die();
-    //     }
-
+        else {
+            $ordre = get_query_var('ordre');
+            $cle = get_query_var('cletri');
+            $query->set('order',  $ordre);
+            $query->set('orderby', $cle);
+            $query->set('postperpage', '-1');
+            return $query;
+        }
     }
+
     function cidw_4w4_query_vars($params){
         $params[] = "cletri";
-        $params[] = "ordre";
+        $params[] = "ordre"; //Ordre ascendant ou descendant
         //$params["cletri"] = "title";
         //var_dump($params); die();
         return $params;
     }
-    add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+
+    add_action('pre_get_posts', 'cidw_4w4_pre_get_posts'); 
     // pre_get_posts est un hook qui marque l'instant se situant entre la création de requête $query et son exécution
-    // pre_get_posts est notre dernière chance (oh noes!) de modifier la requête $query
-    // IMPORTANT
+    // pre_get_posts est notre dernière chance de modifier la requête $query
     add_filter('query_vars', 'cidw_4w4_query_vars' );
+
+    /**
+     * Extraire le slug de la catégorie de l'URL
+     * @param $tableau: liste des slugs de catégorie
+     * @return string 
+     */
+
+        function trouve_la_categorie($tableau) {
+            foreach($tableau as $cle) {
+                if(is_category($cle)) return ($cle);
+            }
+        }
     }
     ?>
 

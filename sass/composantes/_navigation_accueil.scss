@@ -1,4 +1,4 @@
-.menu-menu_accueil-container { //nav
+.menu-accueil-container, .menu-evenement-container { //nav
     padding-top: 2rem;
     z-index: 15;
 
@@ -34,15 +34,15 @@
             margin: 0 15px 0 15px;
             transition: background-color 0.3s, transform 0.3s;
             text-decoration: none;
-            border-left: 2px solid white;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            background-color: #F2B1A2;
             
             a{
                 font-size: clamp(1.5rem, 1vw, 2rem);
-                color: #F2F2F2;
+                color: #222426;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -70,12 +70,16 @@
 
         hr {
             width: 100%;
-            color: #F2F2F2;
+            color: #222426;
         }
     }
 
     .menu-item:hover {
-        background-color: #F2B1A2;
+        background-color: #F25E6B;
         transform: translateY(-10px);
     }
+} //fin menu-accueil container
+
+.menu-evenement-container {
+
 }

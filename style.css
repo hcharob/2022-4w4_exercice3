@@ -445,10 +445,6 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-a {
-  font-size: clamp(0.8rem, 1vw, 1rem);
-}
-
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -756,40 +752,48 @@ Navigation catégorie cours
   transform: translate(0, 5px);
 }
 
+.menu-categorie_cours-container .current-menu-item {
+  background-color: #F25E6B;
+}
+
+.menu-categorie_cours-container .current-menu-item a {
+  color: #F2F2F2;
+}
+
 @media screen and (min-width: 800px) {
   .menu-categorie_cours-container .menu {
     flex-direction: row;
   }
 }
 
-.menu-menu_accueil-container {
+.menu-accueil-container, .menu-evenement-container {
   padding-top: 2rem;
   z-index: 15;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
 }
 
-.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000");
 }
 
-.menu-menu_accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   padding: 1rem;
   margin: 0 15px 0 15px;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
-  border-left: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #F2B1A2;
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   font-size: clamp(1.5rem, 1vw, 2rem);
-  color: #F2F2F2;
+  color: #222426;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -797,12 +801,12 @@ Navigation catégorie cours
   height: 100%;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   text-transform: none;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   margin: 1rem;
   height: 100%;
   width: 60px;
@@ -811,13 +815,13 @@ Navigation catégorie cours
   background-size: contain;
 }
 
-.menu-menu_accueil-container .menu hr {
+.menu-accueil-container .menu hr, .menu-evenement-container .menu hr {
   width: 100%;
-  color: #F2F2F2;
+  color: #222426;
 }
 
-.menu-menu_accueil-container .menu-item:hover {
-  background-color: #F2B1A2;
+.menu-accueil-container .menu-item:hover, .menu-evenement-container .menu-item:hover {
+  background-color: #F25E6B;
   transform: translateY(-10px);
 }
 
@@ -827,7 +831,7 @@ Navigation catégorie cours
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #F2F2F2;
+  color: #222426;
   padding-bottom: 1rem;
 }
 
@@ -868,6 +872,8 @@ Navigation catégorie cours
   gap: 1rem;
   width: 85%;
   margin-top: 1rem;
+  border-top: 2px solid #F25E6B;
+  border-bottom: 2px solid #F25E6B;
   /** Deuxième boîte avec les widgets **/
   /** Troisième boîte avec les widgets **/
 }
@@ -1062,7 +1068,7 @@ ANIMATION
 
 /** Premier cercle **/
 #ligne1 {
-  border: 15px solid #F2F2F2;
+  border: 15px solid #F29F05;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   width: 250px;
