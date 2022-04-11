@@ -22,10 +22,10 @@
     background-color: $color__background-main;
     position: relative;
     z-index: 3;
-    color: #F29F05;
+    color: $color__font-main;
 
     .cours__desc {
-        color: #F25E6B;
+        color: $color__background-main;
     }
 
     p, h2, section {

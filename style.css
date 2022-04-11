@@ -358,7 +358,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #F29F05;
+  color: #3674ED;
 }
 
 a:focus {
@@ -370,11 +370,11 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #F29F05;
+  color: #3674ED;
 }
 
 .site__footer a:visited {
-  color: #F25E6B;
+  color: #CF59D3;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -390,7 +390,7 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #F25E6B;
+  color: #F2F2F2;
 }
 
 .header__titre a:visited {
@@ -398,7 +398,7 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #F25E6B;
+  color: #CF59D3;
 }
 
 .header__titre a:focus {
@@ -450,7 +450,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 /** Contenu principal **/
 .principal {
-  border: 2px solid #F2F2F2;
+  border: 2px solid #222426;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -536,18 +536,18 @@ COMPOSANTES
 
 .formation__cours:hover {
   transform: translate(-5px, -5px);
-  box-shadow: 10px 10px #F29F05;
+  box-shadow: 10px 10px #CF59D3;
 }
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #F25E6B;
+  color: #F2F2F2;
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: #F29F05;
+  color: #3674ED;
   margin: 0;
 }
 
@@ -561,7 +561,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #F25E6B;
+  background-color: #3674ED;
   color: #222426;
   /** Mixin pour les titres **/
 }
@@ -646,7 +646,7 @@ COMPOSANTES
 }
 
 #burger svg {
-  color: #F25E6B;
+  color: white;
 }
 
 /** Style pour le menu burger **/
@@ -681,13 +681,13 @@ COMPOSANTES
 .menu-principal-container a, .footer__liens a {
   display: block;
   padding: 4px;
-  color: #F25E6B;
+  color: #F2F2F2;
   transition: transform 0.3s;
   text-decoration: none;
 }
 
 .menu-principal-container a:hover, .footer__liens a:hover {
-  background-color: #F25E6B;
+  background-color: #CF59D3;
   color: #F2F2F2;
 }
 
@@ -719,7 +719,7 @@ a:-webkit-any-link {
 Navigation catégorie cours
 ------------------------------------------------------------ */
 .menu-categorie_cours-container {
-  background-color: #F2B1A2;
+  background-color: #CF59D3;
   width: 93%;
 }
 
@@ -753,7 +753,7 @@ Navigation catégorie cours
 }
 
 .menu-categorie_cours-container .current-menu-item {
-  background-color: #F25E6B;
+  background-color: #3674ED;
 }
 
 .menu-categorie_cours-container .current-menu-item a {
@@ -821,7 +821,7 @@ Navigation catégorie cours
 }
 
 .menu-accueil-container .menu-item:hover, .menu-evenement-container .menu-item:hover {
-  background-color: #F25E6B;
+  background-color: #222426;
   transform: translateY(-10px);
 }
 
@@ -898,7 +898,7 @@ Navigation catégorie cours
 }
 
 .site__footer__colonne section:nth-of-type(2) a {
-  color: #F29F05;
+  color: #3674ED;
 }
 
 .site__footer__colonne section:nth-of-type(2) li {
@@ -915,7 +915,7 @@ Navigation catégorie cours
 }
 
 .site__footer__colonne section:nth-of-type(3) a:hover {
-  background-color: #F29F05;
+  background-color: #CF59D3;
 }
 
 .site__footer__colonne__ligne {
@@ -930,7 +930,7 @@ Navigation catégorie cours
 
 /** Icônes du footer **/
 .wp-block-social-link a {
-  background-color: #F29F05;
+  background-color: #3674ED;
   border-radius: 50%;
 }
 
@@ -947,7 +947,7 @@ Navigation catégorie cours
   height: 30px;
   position: relative;
   display: flex;
-  box-shadow: -3px 3px #F25E6B, 3px -3px #F29F05;
+  box-shadow: -3px 3px #3674ED, 3px -3px #CF59D3;
 }
 
 .recherche__input {
@@ -981,7 +981,7 @@ Navigation catégorie cours
 }
 
 header .recherche {
-  box-shadow: -3px 3px #222426, 3px -3px #F29F05;
+  box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
 }
 
 .article {
@@ -1013,8 +1013,8 @@ ANIMATION
   border-radius: 50%;
   color: #222426;
   font-weight: bold;
-  background-color: #F25E6B;
-  box-shadow: 5px 5px #F29F05, 10px 10px #F2F2F2;
+  background-color: #3674ED;
+  box-shadow: 5px 5px #CF59D3, 10px 10px #F2F2F2;
   animation: anim_bloc 2s ease-in-out infinite;
 }
 
@@ -1068,7 +1068,7 @@ ANIMATION
 
 /** Premier cercle **/
 #ligne1 {
-  border: 15px solid #F29F05;
+  border: 15px solid #CF59D3;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   width: 250px;
@@ -1077,7 +1077,7 @@ ANIMATION
 
 /** Deuxième cercle **/
 #ligne2 {
-  border: 15px solid #F25E6B;
+  border: 15px solid #3674ED;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   width: 200px;
@@ -1087,7 +1087,7 @@ ANIMATION
 
 /** Troisième cercle **/
 #ligne3 {
-  border: 10px solid #F2B1A2;
+  border: 10px solid #3D8BF2;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   width: 150px;
@@ -1097,7 +1097,7 @@ ANIMATION
 
 /** Quatrième cercle **/
 #ligne4 {
-  border: 10px solid #F2B1A2;
+  border: 10px solid #3D8BF2;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   width: 100px;
@@ -1156,7 +1156,7 @@ ANIMATION
 .animation2 {
   width: 400px;
   height: 400px;
-  background-color: #F25E6B;
+  background-color: #3674ED;
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -1227,7 +1227,7 @@ LAYOUT
 --------------------------------------------------------- */
 /** Style général et layout de la page **/
 .site {
-  background-color: #F2F2F2;
+  background-color: #222426;
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   overflow-x: hidden;
@@ -1235,24 +1235,24 @@ LAYOUT
 
 .site__header {
   grid-area: header;
-  background-color: #F25E6B;
+  background-color: #3674ED;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #F2F2F2;
+  background-color: #222426;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #F2F2F2;
+  background-color: #222426;
   position: relative;
   z-index: 3;
-  color: #F29F05;
+  color: #F2F2F2;
 }
 
 .site__main .cours__desc {
-  color: #F25E6B;
+  color: #222426;
 }
 
 .site__main p, .site__main h2, .site__main section {
@@ -1268,7 +1268,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: #F2F2F2;
+  background-color: #222426;
 }
 
 .site {

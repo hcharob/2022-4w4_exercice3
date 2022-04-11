@@ -2,7 +2,7 @@
 Navigation catégorie cours
 ------------------------------------------------------------ */
 .menu-categorie_cours-container {
-    background-color: #F2B1A2;
+    background-color: $color__bouton__background;
     width: 93%;
     .menu { //ul
         display: flex;
