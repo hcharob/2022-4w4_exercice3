@@ -358,7 +358,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #3674ED;
+  color: #3D8BF2;
 }
 
 a:focus {
@@ -548,6 +548,7 @@ COMPOSANTES
   font-size: 1.2rem;
   color: #3674ED;
   margin: 0;
+  font-weight: bold;
 }
 
 .cours__description {
@@ -556,6 +557,7 @@ COMPOSANTES
 
 .cours__nbre-heure {
   color: #3D8BF2;
+  font-weight: bold;
 }
 
 /** Style du header **/
@@ -734,7 +736,7 @@ Navigation catégorie cours
 .menu-categorie_cours-container .menu .menu-item {
   padding: 0.5rem;
   width: 100%;
-  border-left: 5px solid #222426;
+  border-left: 3px solid #222426;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -753,6 +755,11 @@ Navigation catégorie cours
 
 .menu-categorie_cours-container .menu .menu-item a:hover {
   transform: translate(0, 5px);
+}
+
+.menu-categorie_cours-container .menu .menu-item hr {
+  width: 100%;
+  color: #222426;
 }
 
 .menu-categorie_cours-container .current-menu-item {
