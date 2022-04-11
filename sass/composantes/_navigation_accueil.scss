@@ -38,7 +38,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            background-color: #F2B1A2;
+            background-color: #3674ED;
             
             a{
                 font-size: clamp(1.5rem, 1vw, 2rem);
@@ -75,7 +75,7 @@
     }
 
     .menu-item:hover {
-        background-color: #222426;
+        background-color: #3D8BF2;
         transform: translateY(-10px);
     }
 } //fin menu-accueil container

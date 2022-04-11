@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #222426;
+  color: #F2F2F2;
   padding-bottom: 1rem;
 
   h2 {
@@ -44,8 +44,8 @@
     gap: 1rem;
     width: 85%;
     margin-top: 1rem;
-    border-top: 2px solid #F25E6B;
-    border-bottom: 2px solid #F25E6B;
+    border-top: 2px solid #CF59D3;
+    border-bottom: 2px solid #CF59D3;
 
     @media screen and (min-width : $largeur__media--tablette) {
         flex-direction: row;

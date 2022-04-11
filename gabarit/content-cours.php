@@ -19,7 +19,7 @@
         </a>
     </h3>
 
-    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
+    <div class="cours__nbre-heure"><?= $nbHeures . "h"; ?></div>
     <p class="cours__sigle"><?= $sigleCours; ?> </p>
     <p class="cours__desc"> <?= $descCours; ?></p>
 </article>

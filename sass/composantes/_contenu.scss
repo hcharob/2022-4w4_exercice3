@@ -29,8 +29,7 @@
         
         
         .web {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
-            
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');      
         }
         .jeu{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
@@ -55,7 +54,6 @@
     
     &__cours {
         background-color: $color__background-cours;
-        border: 2px solid #F2B1A2;
         background-position: 95% 3%;
         background-repeat: no-repeat;
         margin: 10px;
@@ -82,7 +80,7 @@
 
 .cours__titre {
     font-size: 1.5rem;
-    color: $color__font-main;
+    color: #222426;
     margin: 5px 0px;
 }
 
@@ -94,5 +92,9 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.cours__nbre-heure {
+    color: #3D8BF2;
 }
 
