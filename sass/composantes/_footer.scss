@@ -8,11 +8,11 @@
   padding-bottom: 1rem;
 
   h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
   }
 
   svg {
@@ -22,18 +22,22 @@
   &__menu__ul {
     display: flex;
     justify-content: center;
+    width: 60%;
+   
   }
 
   &__menu__ul ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__menu__ul a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   &__colonne {
@@ -41,6 +45,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+    margin-bottom: 1rem;
     gap: 1rem;
     width: 85%;
     margin-top: 1rem;
@@ -99,6 +104,7 @@
   #menu-liens_externes {
     background-color: $color__link__footer-font;
   }
+
 }
 
 /** Icônes du footer **/
