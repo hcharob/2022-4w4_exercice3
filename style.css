@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 2022-4w4 lab5_Charbonneau-Robichaud_Hervee
+Theme Name: 2022-4w4_Exercice#3_Charbonneau-Robichaud_Hervee
 Author: Hervee Charbonneau-Robichaud
-Author URI: https://github.com/hcharob/2022-4w4
+Author URI: https://github.com/hcharob/2022-4w4_exercice3
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1068,27 +1068,6 @@ header .recherche {
 
 .titreSingle {
   font-size: 4rem;
-}
-
-.custom-shape-divider-bottom-1649817831 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1649817831 svg {
-  position: relative;
-  display: block;
-  width: calc(122% + 1.3px);
-  height: 187px;
-}
-
-.custom-shape-divider-bottom-1649817831 .shape-fill {
-  fill: #3674ED;
 }
 
 /* ---------------------------------------------------------
