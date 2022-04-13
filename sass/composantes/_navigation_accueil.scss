@@ -1,35 +1,31 @@
-.menu-accueil-container, .menu-evenement-container { //nav
+.menu-accueil-container:first-of-type {
+    //nav
     padding-top: 2rem;
     z-index: 15;
 
-    .menu { //ul
+    .menu {
+        //ul
         display: flex;
 
         .accueil__cours .menu-item-icone {
             background-image: url('https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000');
         }
 
-        .accueil__cours { //li
+        .accueil__cours {
+            //li
 
         }
 
-        .accueil__profs {
+        .accueil__profs {}
 
-        }
+        .accueil__etudiants {}
 
-        .accueil__etudiants {
+        .accueil__aide {}
 
-        }
+        .accueil__reglements {}
 
-        .accueil__aide {
-
-        }
-
-        .accueil__reglements {
-            
-        }
-
-        .menu-item { //li
+        .menu-item {
+            //li
             padding: 1rem;
             margin: 0 15px 0 15px;
             transition: background-color 0.3s, transform 0.3s;
@@ -39,8 +35,8 @@
             justify-content: space-between;
             align-items: center;
             background-color: #3674ED;
-            
-            a{
+
+            a {
                 font-size: clamp(1.5rem, 1vw, 2rem);
                 color: #222426;
                 display: flex;
@@ -63,7 +59,7 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: contain;
-                 
+
                 }
             }
         }
@@ -78,8 +74,55 @@
         background-color: #3D8BF2;
         transform: translateY(-10px);
     }
-} //fin menu-accueil container
+}
 
-.menu-evenement-container {
+//fin menu-accueil container
 
+@keyframes animationCouleur {
+    0%{
+        background-position:0% 50%;
+        background-size: 100% 100%;
+
+    }
+    50%{
+        background-position:100% 50%;
+        background-size: 400% 400%;
+    }
+    100%{
+        background-position:0% 50%;
+        background-size: 100% 100%;
+    }
+}
+
+.menu-accueil-container:nth-of-type(2) {
+    background-color: #222426;
+    width: 100%;
+    padding: 2rem;
+
+    .menu-item {
+        //li
+        padding: 1rem;
+        margin: 15px 0 15px 0;
+        background: linear-gradient(270deg, #3674ed, #cf59d3);
+        background-size: 100% 100%;
+        
+
+        a {
+            font-size: clamp(1.5rem, 1vw, 2rem);
+            color: #F2F2F2;
+
+            .menu-item-description {
+                font-size: clamp(0.8rem, 1.5vw, 1rem);
+                text-transform: none;
+            }
+
+            .menu-item-icone {
+                
+            }
+        }
+    }
+
+    .menu-item:hover {
+        background-size: 400% 400%;
+        animation: animationCouleur 5s ease infinite;    }
 }

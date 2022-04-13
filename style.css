@@ -438,7 +438,7 @@ h1, h2 {
 }
 
 h3, h4, h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -776,20 +776,20 @@ Navigation catégorie cours
   }
 }
 
-.menu-accueil-container, .menu-evenement-container {
+.menu-accueil-container:first-of-type {
   padding-top: 2rem;
   z-index: 15;
 }
 
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.menu-accueil-container:first-of-type .menu {
   display: flex;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container:first-of-type .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000");
 }
 
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.menu-accueil-container:first-of-type .menu .menu-item {
   padding: 1rem;
   margin: 0 15px 0 15px;
   transition: background-color 0.3s, transform 0.3s;
@@ -801,7 +801,7 @@ Navigation catégorie cours
   background-color: #3674ED;
 }
 
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.menu-accueil-container:first-of-type .menu .menu-item a {
   font-size: clamp(1.5rem, 1vw, 2rem);
   color: #222426;
   display: flex;
@@ -811,12 +811,12 @@ Navigation catégorie cours
   height: 100%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container:first-of-type .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   text-transform: none;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container:first-of-type .menu .menu-item a .menu-item-icone {
   margin: 1rem;
   height: 100%;
   width: 60px;
@@ -825,14 +825,57 @@ Navigation catégorie cours
   background-size: contain;
 }
 
-.menu-accueil-container .menu hr, .menu-evenement-container .menu hr {
+.menu-accueil-container:first-of-type .menu hr {
   width: 100%;
   color: #222426;
 }
 
-.menu-accueil-container .menu-item:hover, .menu-evenement-container .menu-item:hover {
+.menu-accueil-container:first-of-type .menu-item:hover {
   background-color: #3D8BF2;
   transform: translateY(-10px);
+}
+
+@keyframes animationCouleur {
+  0% {
+    background-position: 0% 50%;
+    background-size: 100% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-size: 400% 400%;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-size: 100% 100%;
+  }
+}
+
+.menu-accueil-container:nth-of-type(2) {
+  background-color: #222426;
+  width: 100%;
+  padding: 2rem;
+}
+
+.menu-accueil-container:nth-of-type(2) .menu-item {
+  padding: 1rem;
+  margin: 15px 0 15px 0;
+  background: linear-gradient(270deg, #3674ed, #cf59d3);
+  background-size: 100% 100%;
+}
+
+.menu-accueil-container:nth-of-type(2) .menu-item a {
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  color: #F2F2F2;
+}
+
+.menu-accueil-container:nth-of-type(2) .menu-item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  text-transform: none;
+}
+
+.menu-accueil-container:nth-of-type(2) .menu-item:hover {
+  background-size: 400% 400%;
+  animation: animationCouleur 5s ease infinite;
 }
 
 /** Style du footer **/

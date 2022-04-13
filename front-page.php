@@ -28,13 +28,14 @@
         </div>
     </section>
 <h1>Les études en TIM</h1>
+<h3>Le département TIM</h3>
     <?php
     /* ------------------------------------------ menu accueil */
         wp_nav_menu(array(
             "menu"=>"menu_accueil",
             "container"=>"nav"));
     ?>
-
+    <h3>Événements</h3>
     <?php
     /* ------------------------------------------ menu evenement */
         wp_nav_menu(array(
