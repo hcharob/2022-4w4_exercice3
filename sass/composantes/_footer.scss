@@ -70,6 +70,11 @@
     }
 
      /** Deuxième boîte avec les widgets **/
+     section:first-of-type {
+      padding-top: 1rem;
+    }
+
+     /** Deuxième boîte avec les widgets **/
     section:nth-of-type(2) {
       a {
         color: $color__link__footer;

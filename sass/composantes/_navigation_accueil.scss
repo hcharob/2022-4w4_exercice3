@@ -9,19 +9,19 @@
         display: flex;
 
         .accueil__cours .menu-item-icone {
-            background-image: url('https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=article');
         }
 
         .accueil__profs .menu-item-icone {
-            background-image: url('https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=local_library');
         }
 
         .accueil__joindre .menu-item-icone {
-            background-image: url('https://s2.svgbox.net/loaders.svg?ic=bars');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=local_phone');
         }
 
         .accueil__reglements .menu-item-icone{
-            background-image: url('https://s2.svgbox.net/loaders.svg?ic=bars');
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=rule');
         }
 
         .menu-item {
@@ -36,7 +36,7 @@
             align-items: center;
             background-color: #3674ED;
             width: 25%;
-            height: 250px;
+            height: 200px;
             
 
             a {
@@ -54,8 +54,8 @@
                 }
 
                 .menu-item-icone {
-                    height: 10%;
-                    width: 60px;
+                    width: 35px;
+                    height: 35px;
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: contain;

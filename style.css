@@ -787,19 +787,19 @@ Navigation catégorie cours
 }
 
 .menu-accueil-container:first-of-type .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
 }
 
 .menu-accueil-container:first-of-type .menu .accueil__profs .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=three-dots&color=000000");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
 }
 
 .menu-accueil-container:first-of-type .menu .accueil__joindre .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=bars");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_phone");
 }
 
 .menu-accueil-container:first-of-type .menu .accueil__reglements .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=bars");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
 }
 
 .menu-accueil-container:first-of-type .menu .menu-item {
@@ -813,7 +813,7 @@ Navigation catégorie cours
   align-items: center;
   background-color: #3674ED;
   width: 25%;
-  height: 250px;
+  height: 200px;
 }
 
 .menu-accueil-container:first-of-type .menu .menu-item a {
@@ -832,8 +832,8 @@ Navigation catégorie cours
 }
 
 .menu-accueil-container:first-of-type .menu .menu-item a .menu-item-icone {
-  height: 10%;
-  width: 60px;
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -947,6 +947,7 @@ Navigation catégorie cours
   border-top: 2px solid #CF59D3;
   border-bottom: 2px solid #CF59D3;
   /** Deuxième boîte avec les widgets **/
+  /** Deuxième boîte avec les widgets **/
   /** Troisième boîte avec les widgets **/
 }
 
@@ -967,6 +968,10 @@ Navigation catégorie cours
   background-color: #F2F2F2;
   padding-left: 1rem;
   color: #222426;
+}
+
+.site__footer__colonne section:first-of-type {
+  padding-top: 1rem;
 }
 
 .site__footer__colonne section:nth-of-type(2) a {
