@@ -777,8 +777,9 @@ Navigation catégorie cours
 }
 
 .menu-accueil-container:first-of-type {
-  padding-top: 2rem;
   z-index: 15;
+  padding: 1rem;
+  padding-top: 0;
 }
 
 .menu-accueil-container:first-of-type .menu {
@@ -855,6 +856,7 @@ Navigation catégorie cours
   background-color: #222426;
   width: 100%;
   padding: 2rem;
+  padding-top: 0;
 }
 
 .menu-accueil-container:nth-of-type(2) .menu-item {
@@ -1322,6 +1324,11 @@ LAYOUT
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.site__main .wp-block-gallery {
+  width: 90%;
+  z-index: 1;
 }
 
 .site__footer {

@@ -1,7 +1,8 @@
 .menu-accueil-container:first-of-type {
     //nav
-    padding-top: 2rem;
     z-index: 15;
+    padding: 1rem;
+    padding-top: 0;
 
     .menu {
         //ul
@@ -98,7 +99,9 @@
 .menu-accueil-container:nth-of-type(2) {
     background-color: #222426;
     width: 100%;
+   
     padding: 2rem;
+    padding-top: 0;
 
     .menu-item {
         //li
