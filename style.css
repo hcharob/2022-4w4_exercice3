@@ -799,6 +799,7 @@ Navigation catégorie cours
   justify-content: space-between;
   align-items: center;
   background-color: #3674ED;
+  width: 25%;
 }
 
 .menu-accueil-container:first-of-type .menu .menu-item a {
@@ -876,6 +877,7 @@ Navigation catégorie cours
 .menu-accueil-container:nth-of-type(2) .menu-item:hover {
   background-size: 400% 400%;
   animation: animationCouleur 5s ease infinite;
+  cursor: pointer;
 }
 
 /** Style du footer **/
