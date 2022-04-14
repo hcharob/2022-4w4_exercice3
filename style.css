@@ -410,7 +410,7 @@ a:hover, a:active {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 8vw, 6rem);
 }
 
 h2 {
@@ -1070,6 +1070,10 @@ header .recherche {
   font-size: 4rem;
 }
 
+.evenement__resume {
+  background-color: red;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1326,6 +1330,7 @@ LAYOUT
   position: relative;
   z-index: 3;
   color: #F2F2F2;
+  width: 100vw;
 }
 
 .site__main .cours__desc {
