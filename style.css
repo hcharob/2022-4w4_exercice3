@@ -776,33 +776,33 @@ Navigation catégorie cours
   }
 }
 
-.menu-accueil-container:first-of-type {
+.menu-accueil-container {
   z-index: 15;
   padding: 1rem;
   padding-top: 0;
 }
 
-.menu-accueil-container:first-of-type .menu {
+.menu-accueil-container .menu {
   display: flex;
 }
 
-.menu-accueil-container:first-of-type .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
 }
 
-.menu-accueil-container:first-of-type .menu .accueil__profs .menu-item-icone {
+.menu-accueil-container .menu .accueil__profs .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
 }
 
-.menu-accueil-container:first-of-type .menu .accueil__joindre .menu-item-icone {
+.menu-accueil-container .menu .accueil__joindre .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_phone");
 }
 
-.menu-accueil-container:first-of-type .menu .accueil__reglements .menu-item-icone {
+.menu-accueil-container .menu .accueil__reglements .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
 }
 
-.menu-accueil-container:first-of-type .menu .menu-item {
+.menu-accueil-container .menu .menu-item {
   padding: 1rem;
   margin: 0 15px 0 15px;
   transition: background-color 0.3s, transform 0.3s;
@@ -816,7 +816,7 @@ Navigation catégorie cours
   height: 200px;
 }
 
-.menu-accueil-container:first-of-type .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a {
   font-size: clamp(1.5rem, 1vw, 2rem);
   color: #222426;
   display: flex;
@@ -826,12 +826,12 @@ Navigation catégorie cours
   height: 100%;
 }
 
-.menu-accueil-container:first-of-type .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   text-transform: none;
 }
 
-.menu-accueil-container:first-of-type .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
@@ -839,12 +839,12 @@ Navigation catégorie cours
   background-size: contain;
 }
 
-.menu-accueil-container:first-of-type .menu hr {
+.menu-accueil-container .menu hr {
   width: 100%;
   color: #222426;
 }
 
-.menu-accueil-container:first-of-type .menu-item:hover {
+.menu-accueil-container .menu-item:hover {
   background-color: #3D8BF2;
   transform: translateY(-10px);
 }
@@ -864,31 +864,31 @@ Navigation catégorie cours
   }
 }
 
-.menu-accueil-container:nth-of-type(2) {
+.menu-evenement-container {
   background-color: #222426;
   width: 100%;
   padding: 2rem;
   padding-top: 0;
 }
 
-.menu-accueil-container:nth-of-type(2) .menu-item {
+.menu-evenement-container .menu-item {
   padding: 1rem;
   margin: 15px 0 15px 0;
   background: linear-gradient(270deg, #3674ed, #cf59d3);
   background-size: 100% 100%;
 }
 
-.menu-accueil-container:nth-of-type(2) .menu-item a {
+.menu-evenement-container .menu-item a {
   font-size: clamp(1.5rem, 1vw, 2rem);
   color: #F2F2F2;
 }
 
-.menu-accueil-container:nth-of-type(2) .menu-item a .menu-item-description {
+.menu-evenement-container .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
   text-transform: none;
 }
 
-.menu-accueil-container:nth-of-type(2) .menu-item:hover {
+.menu-evenement-container .menu-item:hover {
   background-size: 400% 400%;
   animation: animationCouleur 5s ease infinite;
   cursor: pointer;
