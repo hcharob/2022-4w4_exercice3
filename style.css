@@ -1083,12 +1083,16 @@ header .recherche {
   width: 50vw;
   height: 50vh;
   z-index: 40;
-  transform: scale(0.1);
+  transform: scale(0);
   transition: transform 0.2s ease-in-out;
 }
 
-.boite__modale:hover {
+.ouvrir {
   transform: scale(1);
+}
+
+.fermeture {
+  transform: scale(0);
 }
 
 /* ---------------------------------------------------------

@@ -49,7 +49,7 @@ wp_nav_menu(array(
         x
     </button>
     <p class="boite__modale_texte">
-        Ceci est une premier test de boite modale :D
+        Ceci est une premier test de boite modale
     </p>
 </div>
 
