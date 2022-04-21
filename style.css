@@ -1078,8 +1078,8 @@ header .recherche {
   position: fixed;
   top: 25%;
   left: 25%;
-  border: 5px solid black;
-  background-color: red;
+  border: 5px solid #222426;
+  background-color: #3D8BF2;
   width: 50vw;
   height: 50vh;
   z-index: 40;
