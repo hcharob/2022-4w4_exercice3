@@ -44,6 +44,15 @@ wp_nav_menu(array(
     
 </footer>
 
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">
+        x
+    </button>
+    <p class="boite__modale_texte">
+        Ceci est une premier test de boite modale :D
+    </p>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

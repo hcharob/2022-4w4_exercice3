@@ -4,7 +4,8 @@
     background-color: $color__background-body;
     font-family: $font__main;
     width: 100vw;  
-    overflow-x: hidden;  
+    overflow-x: hidden;
+    position: relative;  
 }
 
 .site__header{
@@ -23,7 +24,7 @@
     position: relative;
     z-index: 3;
     color: $color__font-main;
-    width: 100vw;
+    width: 100%;
 
     .cours__desc {
         color: $color__background-main;
