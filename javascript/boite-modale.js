@@ -17,6 +17,6 @@
 
     boite__modale__fermeture.addEventListener('mousedown', function(){
         boite__modale.classList.remove('ouvrir');
-      })
+    })
     
 })()
