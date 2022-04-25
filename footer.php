@@ -48,7 +48,7 @@ wp_nav_menu(array(
     <button class="boite__modale__fermeture">
         x
     </button>
-    <p class="boite__modale_texte">
+    <p class="boite__modale__texte">
         Ceci est une premier test de boite modale
     </p>
 </div>

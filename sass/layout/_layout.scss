@@ -23,8 +23,12 @@
     background-color: $color__background-main;
     position: relative;
     z-index: 3;
-    color: $color__font-main;
+    color: #222426;
     width: 100%;
+
+    h2 {
+        color: #F2F2F2;
+    }
 
     .cours__desc {
         color: $color__background-main;

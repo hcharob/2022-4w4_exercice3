@@ -518,6 +518,7 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   transition: box-shadow 0.2s, transform 0.5s;
+  position: relative;
   padding: 10px;
 }
 
@@ -531,6 +532,10 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours__invisible {
+  display: none;
 }
 
 .formation__cours:hover {
@@ -1078,13 +1083,20 @@ header .recherche {
   position: fixed;
   top: 25%;
   left: 25%;
-  border: 2px solid #222426;
-  background: linear-gradient(270deg, #cf59d3, #3674ed);
+  background-color: #3674ED;
   width: 50vw;
   height: 50vh;
+  border: 2px solid #3674ED;
   z-index: 40;
   transform: scale(0);
   transition: transform 0.2s ease-in-out;
+  padding: 0.5rem;
+  box-shadow: 10px 10px #222426;
+}
+
+.boite__modale .boite__modale__fermeture {
+  background-color: #222426;
+  color: #F2F2F2;
 }
 
 .ouvrir {
@@ -1351,8 +1363,12 @@ LAYOUT
   background-color: #222426;
   position: relative;
   z-index: 3;
-  color: #F2F2F2;
+  color: #222426;
   width: 100%;
+}
+
+.site__main h2 {
+  color: #F2F2F2;
 }
 
 .site__main .cours__desc {
