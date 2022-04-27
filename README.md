@@ -1,5 +1,5 @@
 /**
-Theme Name: 2022-4w4_Exercice#3_Charbonneau-Robichaud_Hervee
+Theme Name: 2022-4w4_Exercice#4_Charbonneau-Robichaud_Hervee
 Author: Hervee Charbonneau-Robichaud
 Author URI: https://github.com/hcharob/2022-4w4_exercice3
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/hcharob/2022-4w4_exercice3

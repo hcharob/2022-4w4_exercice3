@@ -2,18 +2,20 @@
     position: fixed;
     top: 25%;
     left: 25%;
-    background-color: #3D8BF2;
-    box-shadow: 10px 10px #222426;
+    border: 3px solid #3674ED;
+    background-color: #F2F2F2;
+    box-shadow: 10px 10px #3674ED;
+    line-height: 1.2rem;
+    padding: 1rem;
     width: 50vw;
-    height: 50vh;
-    // transform: scale(.1);
+    height: auto;
     z-index: 40;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 
-    &__fermeture {}
-    &__texte {}
-
+    .boite__modale__texte {
+        line-height: 1.5rem;
+    }
 }
 
 .ouvrir {
@@ -25,6 +27,13 @@
 }
 
 .boite__modale__fermeture {
-    background-color: #222426;
+    background-color: #3674ED;
+    border: 2px solid #3674ED;
     color: #F2F2F2;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #F2F2F2;
+        color: #3674ED;
+    }
 }

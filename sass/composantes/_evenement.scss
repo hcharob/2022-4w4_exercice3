@@ -1,10 +1,30 @@
 .evenement {
+    border: 2px solid #CF59D3;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     &__resume {
-        background-color: red;
+  
     }
 
     &__endroit {
-      
+
+    }
+
+    &__organisateur {
+
+    }
+
+    &__date {
+
+    }
+
+    &__heure {
+
+    }
+    img {
+    width: 500px;
+    height: auto;
     }
 
 }

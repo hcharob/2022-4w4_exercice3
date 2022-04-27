@@ -58,7 +58,6 @@
         background-repeat: no-repeat;
         position: relative;
         margin: 10px;
-       
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -66,6 +65,10 @@
         text-align: center;
         width: 100%;
         transition: box-shadow 0.2s, transform 0.5s;
+
+        &__invisible {
+            display : none;
+        } 
 
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
@@ -110,15 +113,16 @@
     font-size: 1rem;
     text-align: center;
     margin-top: -0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .cours__desc__ouvrir {
     margin: 0.5rem;
     color: #3674ED;
     border: 2px solid #3674ED;
+    background-color: #F2F2F2;
     box-shadow: 5px 5px #3674ED;
-    transition: background-color 0.5s, box-shadow 0.5s;
+    transition: background-color 0.3s, box-shadow 0.3s;
     
   
   &:hover {

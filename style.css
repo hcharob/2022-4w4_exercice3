@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 2022-4w4_Exercice#3_Charbonneau-Robichaud_Hervee
+Theme Name: 2022-4w4_Exercice#4_Charbonneau-Robichaud_Hervee
 Author: Hervee Charbonneau-Robichaud
-Author URI: https://github.com/hcharob/2022-4w4_exercice3
+Author URI: https://github.com/hcharob/2022-4w4_exercice4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -524,6 +524,10 @@ COMPOSANTES
   padding: 10px;
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   .formation__cours {
     width: 45%;
@@ -569,15 +573,16 @@ COMPOSANTES
   font-size: 1rem;
   text-align: center;
   margin-top: -0.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .cours__desc__ouvrir {
   margin: 0.5rem;
   color: #3674ED;
   border: 2px solid #3674ED;
+  background-color: #F2F2F2;
   box-shadow: 5px 5px #3674ED;
-  transition: background-color 0.5s, box-shadow 0.5s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .cours__desc__ouvrir:hover {
@@ -1096,21 +1101,36 @@ header .recherche {
   font-size: 4rem;
 }
 
-.evenement__resume {
-  background-color: red;
+.evenement {
+  border: 2px solid #CF59D3;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.evenement img {
+  width: 500px;
+  height: auto;
 }
 
 .boite__modale {
   position: fixed;
   top: 25%;
   left: 25%;
-  background-color: #3D8BF2;
-  box-shadow: 10px 10px #222426;
+  border: 3px solid #3674ED;
+  background-color: #F2F2F2;
+  box-shadow: 10px 10px #3674ED;
+  line-height: 1.2rem;
+  padding: 1rem;
   width: 50vw;
-  height: 50vh;
+  height: auto;
   z-index: 40;
   transform: scale(0);
   transition: transform 0.2s ease-in-out;
+}
+
+.boite__modale .boite__modale__texte {
+  line-height: 1.5rem;
 }
 
 .ouvrir {
@@ -1122,8 +1142,15 @@ header .recherche {
 }
 
 .boite__modale__fermeture {
-  background-color: #222426;
+  background-color: #3674ED;
+  border: 2px solid #3674ED;
   color: #F2F2F2;
+  font-weight: bold;
+}
+
+.boite__modale__fermeture:hover {
+  background-color: #F2F2F2;
+  color: #3674ED;
 }
 
 /* ---------------------------------------------------------
