@@ -2,9 +2,8 @@
     position: fixed;
     top: 25%;
     left: 25%;
-    border: 5px solid #222426;
     background-color: #3D8BF2;
-    // box-shadow: 10px 10px #222426;
+    box-shadow: 10px 10px #222426;
     width: 50vw;
     height: 50vh;
     // transform: scale(.1);
@@ -23,4 +22,9 @@
 
 .fermeture {
     transform: scale(0);
+}
+
+.boite__modale__fermeture {
+    background-color: #222426;
+    color: #F2F2F2;
 }
