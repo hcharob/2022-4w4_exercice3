@@ -16,6 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800;1,900&display=swap"
         rel="stylesheet">
     <?php wp_head() ?>
+    <style>
+        .home::after {
+            background-color: <?= get_theme_mod("background_clippath"); ?>;
+        }
+
+        .site__main {
+            
+        }
+    </style>
     <?php show_admin_bar(true); ?>
 </head>
 
