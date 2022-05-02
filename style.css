@@ -1136,6 +1136,14 @@ header .recherche {
   color: #3674ED;
 }
 
+.wp-block-gallery {
+  width: 100vw;
+}
+
+.wp-block-gallery .wp-block-image {
+  width: 25%;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1200,6 +1208,10 @@ ANIMATION
 }
 
 /** Style général des cercles **/
+.anim2 {
+  padding-top: 1rem;
+}
+
 .ligneCercle {
   background-color: transparent;
   border-radius: 50%;
@@ -1367,10 +1379,10 @@ ANIMATION
 
 .burger {
   position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   background-color: #222426;
-  margin: 0.5rem;
+  margin: 1rem;
   border-radius: 10%;
   overflow: hidden;
 }
