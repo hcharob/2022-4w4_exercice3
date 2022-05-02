@@ -7,3 +7,24 @@
      
     }
 }
+
+html {
+    ::-webkit-scrollbar {
+        width: 15px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background-color: none; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background-color: #CF59D3; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #F2F2F2; 
+      }
+}
