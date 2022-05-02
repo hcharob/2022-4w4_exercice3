@@ -617,14 +617,13 @@ COMPOSANTES
   }
   .site__header__titre .custom-logo-link {
     margin-right: auto;
-    padding: 0.5vw;
     height: 100%;
     width: auto;
   }
 }
 
 .site__header .header__titre {
-  font-size: clamp(2rem, 2vw, 4rem);
+  font-size: clamp(3rem, 3vw, 5rem);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
@@ -1136,12 +1135,26 @@ header .recherche {
   color: #3674ED;
 }
 
-.wp-block-gallery {
-  width: 100vw;
+.galerie {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.wp-block-gallery .wp-block-image {
-  width: 25%;
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 95%;
+  }
+}
+
+.home .site__main {
+  justify-content: center;
+  align-items: center;
+}
+
+.home .site__main h2 {
+  font-size: 4rem;
 }
 
 /* ---------------------------------------------------------
@@ -1210,6 +1223,7 @@ ANIMATION
 /** Style général des cercles **/
 .anim2 {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .ligneCercle {

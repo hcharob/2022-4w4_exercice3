@@ -1,7 +1,15 @@
-.wp-block-gallery {
-    width: 100vw;
-    .wp-block-image {
-        width: 25%;
+.galerie {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $largeur__media--tablette) {
+        width: 95%;
+    }
+
+    @media screen and (min-width: $largeur__media--desktop) {
+        
     }
 }
 

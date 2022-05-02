@@ -20,7 +20,6 @@
 
       .custom-logo-link {
         margin-right: auto;
-        padding: 0.5vw;
         height: 100%;
         width: auto;
       }
@@ -29,7 +28,7 @@
 
   /** Mixin pour les titres **/
   @mixin titre {
-    font-size: clamp(2rem, 2vw, 4rem);
+    font-size: clamp(3rem, 3vw, 5rem);
     font-family: $font__titre;
     letter-spacing: 5px;
     font-weight: bold;

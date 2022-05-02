@@ -43,15 +43,16 @@ COMPOSANTES
 @import "composantes/evenement";
 @import "composantes/boite-modale";
 @import "composantes/galerie";
+@import "composantes/accueil";
 
 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
-@import "animation/accueil";
-@import "animation/404Anim";
-@import "animation/singleAnim";
+@import "animation/accueil-anim";
+@import "animation/404-anim";
+@import "animation/single-anim";
 @import "animation/burger";
 /* ---------------------------------------------------------
 LAYOUT

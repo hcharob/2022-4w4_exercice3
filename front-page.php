@@ -9,6 +9,17 @@
         <div class="animation__bloc"></div>
     </section> -->
 
+    
+
+    <!-- <h1>---- Front-page.php ------</h1> -->
+    <?php if (have_posts()): the_post(); ?>
+    <!-- <?php the_title() ?> -->
+    <div class="galerie">
+        <?php the_content() ?>
+    </div>
+    <?php endif ?>
+
+    <section>
     <div class="anim2">
         <div class="ligneCercle" id="ligne1">
             <div class="ligneCercle" id="ligne2">
@@ -18,17 +29,8 @@
             </div>
         </div>
     </div>
-
-    <!-- <h1>---- Front-page.php ------</h1> -->
-    <?php if (have_posts()): the_post(); ?>
-    <!-- <?php the_title() ?> -->
-    <?php the_content() ?>
-    <?php endif ?>
-
-    <section>
-
-
     </section>
+    
     <h1>Les études en TIM</h1>
     <h3>Le département TIM</h3>
     <?php

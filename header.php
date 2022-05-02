@@ -16,11 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800;1,900&display=swap"
         rel="stylesheet">
     <?php wp_head() ?>
+    <!-- Style du conteneur -->
     <style>
+        /* Change le background-color du clip path dans .home::after qui est un pseudo élément du body dans la page d'accueil */
         .home::after {
             background-color: <?= get_theme_mod("background_clippath"); ?>;
         }
-
+        /* Change le background-color du body */
+        .site {
+            background-color: <?= get_theme_mod("background_body"); ?>
+        }
         /* .site__main {
 
         } */
@@ -28,7 +33,7 @@
     <?php show_admin_bar(true); ?>
 </head>
 
-<body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >
+<body <?php body_class("site"); ?> >
     <header class="site__header">
         <section class="site__header__titre">
             <?=get_custom_logo(); ?>
