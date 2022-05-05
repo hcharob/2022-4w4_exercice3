@@ -1166,6 +1166,33 @@ header .recherche {
   height: 100%;
 }
 
+.boite__carrousel__navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f275;
+  height: 40px;
+  left: 0;
+}
+
+.boite__carrousel__navigation button {
+  width: 16px;
+  height: 16px;
+  background-color: #222426;
+  border: none;
+  margin: 20px 15px;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: #f2f2f2;
+}
+
 .galerie {
   width: 95%;
   display: flex;
