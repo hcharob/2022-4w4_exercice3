@@ -1,20 +1,29 @@
-.boite__modale {
+.boite__modale, .boite__carrousel {
     position: fixed;
     top: 25%;
     left: 25%;
+    width: 50vw;
+    height: auto;
     border: 3px solid #3674ED;
     background-color: #F2F2F2;
     box-shadow: 10px 10px #3674ED;
     line-height: 1.2rem;
     padding: 1rem;
-    width: 50vw;
-    height: auto;
     z-index: 40;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 
     .boite__modale__texte {
         line-height: 1.5rem;
+    }
+
+    &__fermeture {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
     }
 }
 
@@ -24,6 +33,7 @@
 
 .fermeture {
     transform: scale(0);
+    
 }
 
 .boite__modale__fermeture {
@@ -35,5 +45,21 @@
     &:hover {
         background-color: #F2F2F2;
         color: #3674ED;
+    }
+}
+
+.boite__carrousel {
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }

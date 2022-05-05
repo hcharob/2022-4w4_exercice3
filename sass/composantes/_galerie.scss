@@ -17,5 +17,9 @@
 }
 
 .wp-block-image:hover {
+    cursor: pointer;
 
+    &::before {
+        
+    }
 }
