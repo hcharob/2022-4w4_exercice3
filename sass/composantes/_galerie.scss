@@ -1,14 +1,17 @@
 .galerie {
-    width: 75%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
     @media screen and (min-width: $largeur__media--tablette) {
-        width: 95%;
+        width: 80%;
     }
 
     @media screen and (min-width: $largeur__media--desktop) {
+        
+    }
+
+    .carrousel {
         
     }
 }
