@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-
+<div class="curseur"></div>
     <div class="oeil_conteneur">
         <div class="oeil">
             <div class="iris"></div>

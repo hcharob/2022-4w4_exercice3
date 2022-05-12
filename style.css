@@ -915,7 +915,6 @@ Navigation catégorie cours
 .menu-evenement-container .menu-item:hover {
   background-size: 400% 400%;
   animation: animationCouleur 5s ease infinite;
-  cursor: pointer;
 }
 
 /** Style du footer **/
@@ -1216,13 +1215,13 @@ header .recherche {
 }
 
 .galerie .wp-block-image:hover {
-  cursor: pointer;
   opacity: 0.3;
 }
 
 .home .site__main {
   justify-content: center;
   align-items: center;
+  cursor: none;
 }
 
 .home .site__main h2 {
@@ -1272,6 +1271,35 @@ html ::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.curseur {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid #F2F2F2;
+  background-color: #222426;
+  border-radius: 50%;
+  position: fixed;
+  top: -1.2rem;
+  left: -1.2rem;
+  /*Affichage en avant-plan de toutes les autres éléments HTML*/
+  z-index: 500;
+  pointer-events: none;
+  will-change: transform, opacity;
+  /*Transition*/
+  transition: transform 0.1s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
+}
+
+.curseur::before {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: 0.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
   border-radius: 50%;
 }
 
