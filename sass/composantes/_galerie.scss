@@ -2,6 +2,7 @@
     width: 95%;
     display: flex;
     justify-content: center;
+    
 
     @media screen and (min-width: $largeur__media--tablette) {
         width: 80%;
@@ -14,12 +15,14 @@
     .carrousel {
         
     }
-}
 
-.wp-block-image:hover {
-    cursor: pointer;
+    .wp-block-image {
+     transition: 0.3s ease-in-out;
+    }
 
-    &::before {
-        
+    .wp-block-image:hover {
+        cursor: pointer;
+        opacity: 0.3;
     }
 }
+

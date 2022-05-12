@@ -1179,7 +1179,6 @@ header .recherche {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f275;
   height: 40px;
   left: 0;
 }
@@ -1187,11 +1186,13 @@ header .recherche {
 .boite__carrousel__navigation button {
   width: 16px;
   height: 16px;
-  background-color: #222426;
+  background-color: #3674ED;
   border: none;
-  margin: 20px 15px;
+  margin: 20px 20px;
   border-radius: 50%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px #222426;
+  transition: 0.2s ease-in-out;
 }
 
 .boite__carrousel__navigation button:focus {
@@ -1210,8 +1211,13 @@ header .recherche {
   }
 }
 
-.wp-block-image:hover {
+.galerie .wp-block-image {
+  transition: 0.3s ease-in-out;
+}
+
+.galerie .wp-block-image:hover {
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .home .site__main {
