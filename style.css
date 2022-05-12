@@ -606,11 +606,16 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100px;
+  line-height: 10px;
+}
+
+.site__header__titre h2 {
+  line-height: 1rem;
 }
 
 @media screen and (min-width: 800px) {
   .site__header__titre {
+    height: 100px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1238,6 +1243,30 @@ html ::-webkit-scrollbar-thumb {
 
 html ::-webkit-scrollbar-thumb:hover {
   background-color: #F2F2F2;
+}
+
+.oeil {
+  width: 120px;
+  height: 120px;
+  background: #F2F2F2;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.iris {
+  width: 70px;
+  height: 70px;
+  background: #222426;
+  border: 10px solid #3674ED;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 /* ---------------------------------------------------------

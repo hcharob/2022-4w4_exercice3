@@ -28,3 +28,29 @@ html {
         background-color: #F2F2F2; 
       }
 }
+
+//oeil
+
+.oeil {
+  width: 120px;
+  height: 120px;
+  background: #F2F2F2;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.3);
+  
+}
+.iris {
+  width: 70px;
+  height: 70px;
+  background: #222426;
+  border: 10px solid #3674ED;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

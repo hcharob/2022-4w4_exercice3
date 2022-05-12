@@ -1,32 +1,32 @@
 <?php get_header() ?>
 <main class="site__main">
 
-    <!-- <section class="animation">
-        <div class="animation__bloc"></div>
-        <div class="animation__bloc"></div>
-        <div class="animation__bloc"></div>
-        <div class="animation__bloc"></div>
-        <div class="animation__bloc"></div>
-    </section> -->
+    <div class="oeil_conteneur">
+        <div class="oeil">
+            <div class="iris"></div>
+        </div>
+    </div>
 
     <!-- <h1>---- Front-page.php ------</h1> -->
     <?php if (have_posts()): the_post(); ?>
-     <!-- <?php the_title() ?> -->
-        <?php the_content() ?>
+    <!-- <?php the_title() ?> -->
+    <?php the_content() ?>
     <?php endif ?>
 
     <section>
-    <div class="anim2">
-        <div class="ligneCercle" id="ligne1">
-            <div class="ligneCercle" id="ligne2">
-                <div class="ligneCercle" id="ligne3">
-                    <div class="ligneCercle" id="ligne4"> </div>
+
+
+        <div class="anim2">
+            <div class="ligneCercle" id="ligne1">
+                <div class="ligneCercle" id="ligne2">
+                    <div class="ligneCercle" id="ligne3">
+                        <div class="ligneCercle" id="ligne4"> </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    
+
     <h1>Les études en TIM</h1>
     <h3>Le département TIM</h3>
     <?php

@@ -55,4 +55,5 @@ wp_nav_menu(array(
 
 <?php wp_footer(); ?>
 </body>
+
 </html>
