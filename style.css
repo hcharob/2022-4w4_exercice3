@@ -1107,9 +1107,6 @@ header .recherche {
 
 .boite__modale, .boite__carrousel {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  width: 50vw;
   height: auto;
   border: 3px solid #3674ED;
   background-color: #F2F2F2;
@@ -1119,6 +1116,13 @@ header .recherche {
   z-index: 40;
   transform: scale(0);
   transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale, .boite__carrousel {
+    top: 25%;
+    left: 25%;
+  }
 }
 
 .boite__modale .boite__modale__texte, .boite__carrousel .boite__modale__texte {
@@ -1136,6 +1140,14 @@ header .recherche {
 
 .ouvrir {
   transform: scale(1);
+}
+
+.boite__modale {
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  padding-top: 2rem;
+  height: auto;
 }
 
 .fermeture {
@@ -1156,18 +1168,43 @@ header .recherche {
 
 .boite__carrousel {
   top: 12.5%;
-  left: 12.5%;
-  width: 75%;
+  left: 5.5%;
+  width: 90vw;
   height: 75%;
 }
 
-.boite__carrousel img {
+@media screen and (min-width: 800px) {
+  .boite__carrousel {
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+.boite__carrousel__img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  transform: translateX(0);
 }
 
 .boite__carrousel__navigation {
@@ -1182,7 +1219,7 @@ header .recherche {
   left: 0;
 }
 
-.boite__carrousel__navigation button {
+.boite__carrousel__navigation .bouton {
   width: 16px;
   height: 16px;
   background-color: #3674ED;
@@ -1194,7 +1231,7 @@ header .recherche {
   transition: 0.2s ease-in-out;
 }
 
-.boite__carrousel__navigation button:focus {
+.boite__carrousel__navigation .bouton:focus {
   background-color: #f2f2f2;
 }
 
