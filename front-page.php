@@ -14,8 +14,6 @@
     <?php endif ?>
 
     <section>
-
-
         <div class="anim2">
             <div class="ligneCercle" id="ligne1">
                 <div class="ligneCercle" id="ligne2">

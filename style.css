@@ -1177,8 +1177,8 @@ header .recherche {
   .boite__carrousel {
     top: 12.5%;
     left: 12.5%;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 60%;
   }
 }
 
@@ -1203,8 +1203,16 @@ header .recherche {
   transform: translateX(-100%);
 }
 
+.boite__carrousel__img img .derniere-image {
+  object-position: 50% 0%;
+}
+
 .boite__carrousel__img img.img--ouvrir {
   transform: translateX(0);
+}
+
+.boite__carrousel__img .derniere-image {
+  object-position: 50% 0%;
 }
 
 .boite__carrousel__navigation {
@@ -1308,12 +1316,9 @@ html ::-webkit-scrollbar-thumb:hover {
 .curseur {
   height: 2rem;
   width: 2rem;
-  background-color: none;
+  background-color: #222426;
   border-radius: 50%;
-  border-right: 10px solid #CF59D3;
-  border-left: 10px solid #CF59D3;
-  border-top: 10px solid #3674ED;
-  border-bottom: 10px solid #3674ED;
+  border-bottom: 3px solid #F2F2F2;
   position: fixed;
   top: -1rem;
   left: -1rem;
@@ -1324,8 +1329,18 @@ html ::-webkit-scrollbar-thumb:hover {
   transition: transform 0.4s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
 }
 
-/* Cosmétique (point centre)
-====================================================================*/
+.curseur::before {
+  content: "";
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F2F2F2;
+  border-radius: 50%;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

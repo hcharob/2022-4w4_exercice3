@@ -31,6 +31,11 @@
         .site__header {
             background-color: <?= get_theme_mod("background_header"); ?>
         }
+
+        /* Change la couleur de l'oeil */
+        .iris{
+            border-color: <?= get_theme_mod("couleur_oeil"); ?>
+        }
     </style>
     <?php show_admin_bar(true); ?>
 </head>

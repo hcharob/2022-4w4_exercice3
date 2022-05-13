@@ -68,8 +68,8 @@
     @media screen and (min-width : $largeur__media--tablette){
         top: 12.5%;
         left: 12.5%;
-        width: 75%;
-        height: 75%;
+        width: 50%;
+        height: 60%;
     }
 
     &__img { //conteneur d'img .boite__carrousel__img
@@ -91,9 +91,17 @@
             transition: all 1s ease-in-out;
             transform: translateX(-100%);
 
+            .derniere-image {
+                object-position: 50% 0%;
+            }
+
             &.img--ouvrir {
                 transform: translateX(0);
             }
+        }
+
+        .derniere-image {
+            object-position: 50% 0%;
         }
     }
 

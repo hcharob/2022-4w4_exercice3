@@ -1,12 +1,11 @@
+//Style du curseur
+
 .curseur {
   height: 2rem;
   width: 2rem;
-  background-color: none;
+  background-color: #222426;
   border-radius: 50%;
-  border-right: 10px solid #CF59D3;
-  border-left: 10px solid #CF59D3;
-  border-top: 10px solid #3674ED;
-  border-bottom: 10px solid #3674ED;
+  border-bottom: 3px solid #F2F2F2;
   position: fixed;
   //doit être la moitié de la taille
   top: -1rem;
@@ -20,6 +19,15 @@
 }
 
 
-/* Cosmétique (point centre)
-====================================================================*/
-
+//Point du centre
+.curseur::before {
+  content: "";
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F2F2F2;
+  border-radius: 50%;
+}
