@@ -26,9 +26,11 @@
         .site {
             background-color: <?= get_theme_mod("background_body"); ?>
         }
-        /* .site__main {
 
-        } */
+        /* Change la couleur du header */
+        .site__header {
+            background-color: <?= get_theme_mod("background_header"); ?>
+        }
     </style>
     <?php show_admin_bar(true); ?>
 </head>

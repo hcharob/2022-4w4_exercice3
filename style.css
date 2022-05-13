@@ -1223,16 +1223,10 @@ header .recherche {
   width: 16px;
   height: 16px;
   background-color: #3674ED;
-  border: none;
   margin: 20px 20px;
   border-radius: 50%;
   margin-bottom: 30px;
-  box-shadow: 2px 2px #222426;
   transition: 0.2s ease-in-out;
-}
-
-.boite__carrousel__navigation .bouton:focus {
-  background-color: #f2f2f2;
 }
 
 .galerie {
