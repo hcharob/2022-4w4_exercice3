@@ -6,7 +6,7 @@
     let galerie__img = document.querySelectorAll('.galerie img');
     //conteneur image du carrousel
     let boite__carrousel__img = document.querySelector('.boite__carrousel__img');
-    console.log(galerie__img.length);
+    // console.log(galerie__img.length);
 
   
     //Lien entre le bouton radio et l'image qu'on veut faire afficher
@@ -31,11 +31,12 @@
         bouton.dataset.index = index++;
         boite__carrousel__navigation.append(bouton);
         bouton.addEventListener('mousedown', function() {
+            initialiseRadioBouton();
             // elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'));
             boite__carrousel__img.children[this.dataset.index].classList.add('img--ouvrir');
         })
 
-        console.log(img.tagName);
+        // console.log(img.tagName);
         img.addEventListener('mousedown', function () {
             // console.log(this.getAttribute('src'));
             boite__carrousel.classList.add('ouvrir');
@@ -49,5 +50,13 @@
     boite__carrousel__fermeture.addEventListener('mousedown', function () {
         boite__carrousel.classList.remove('ouvrir');
     })
+
+    function initialiseRadioBouton(){
+        for(let i = 0; i < boite__carrousel__navigation.children.length; i++){
+            if(boite__carrousel__navigation.children[i].checked == false){
+                boite__carrousel__img.children[i].classList.remove('img--ouvrir');
+            }
+        }
+    }
 
 })()
