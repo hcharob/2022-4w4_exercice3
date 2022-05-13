@@ -1,34 +1,25 @@
-// Changement de style du curseur
 .curseur {
-    height: 1.5rem;
-    width: 1.5rem;
-    border: 2px solid #F2F2F2;
-    background-color: #222426;
-    border-radius: 50%;
-    position: fixed;
-    top: -1.2rem;
-    left: -1.2rem;
-  
-    /*Affichage en avant-plan de toutes les autres éléments HTML*/
-    z-index: 500;
-    pointer-events: none;
-    will-change: transform, opacity;
-  
-    /*Transition*/
-    transition: transform 0.1s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
-  }
-  
-  
-  //Style du point centre
-  .curseur::before {
-    content: "";
-    position: absolute;
-    height: 0.4rem;
-    width: 0.4rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f9f9f9;
-    border-radius: 50%;
-  }
-  
+  height: 2rem;
+  width: 2rem;
+  background-color: none;
+  border-radius: 50%;
+  border-right: 10px solid #CF59D3;
+  border-left: 10px solid #CF59D3;
+  border-top: 10px solid #3674ED;
+  border-bottom: 10px solid #3674ED;
+  position: fixed;
+  //doit être la moitié de la taille
+  top: -1rem;
+  left: -1rem;
+  z-index: 500;
+  pointer-events: none;
+  will-change: transform, opacity;
+
+  /*Transition*/
+  transition: transform 0.4s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
+}
+
+
+/* Cosmétique (point centre)
+====================================================================*/
+
