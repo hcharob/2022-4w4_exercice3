@@ -7,6 +7,11 @@
     .menu {
         //ul
         display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width : $largeur__media--tablette) {
+            flex-direction: row;
+        }
 
         .accueil__cours .menu-item-icone {
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=article');
@@ -35,8 +40,14 @@
             justify-content: space-between;
             align-items: center;
             background-color: #3674ED;
-            width: 25%;
-            height: 200px;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 1rem;
+
+            @media screen and (min-width : $largeur__media--tablette) {
+                width: 25%;
+                height: 200px;
+            }
             
 
             a {
@@ -63,6 +74,7 @@
             }
         }
 
+        //barres sous titre
         hr {
             width: 100%;
             color: #222426;

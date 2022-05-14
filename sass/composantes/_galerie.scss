@@ -1,19 +1,11 @@
 .galerie {
-    width: 95%;
+    width: 100vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
-
     @media screen and (min-width: $largeur__media--tablette) {
-        width: 80%;
-    }
-
-    @media screen and (min-width: $largeur__media--desktop) {
-        
-    }
-
-    .carrousel {
-        
+        width: 90%;
     }
 
     .wp-block-image {
