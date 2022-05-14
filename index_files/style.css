@@ -1,13 +1,15 @@
 @charset "UTF-8";
 /*
-Theme Name: 2022-4w4_Exercice#4_Charbonneau-Robichaud_Hervee
+/**
+Theme Name: 2022-4w4 TP2 - Charbonneau-Robichaud_Hervee
 Author: Hervee Charbonneau-Robichaud
-Author URI: https://github.com/hcharob/2022-4w4_exercice4
+Author URI: https://github.com/hcharob/2022-4w4_tp2
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cidw-4w4
+Text Domain: cidw-4w4# 2022-4w4_lab5
+Github Pages: https://hcharob.github.io/2022-4w4_tp2
 
 */
 /* ---------------------------------------------------------
@@ -697,6 +699,14 @@ COMPOSANTES
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
   margin-left: 2%;
+  margin-top: 7%;
+}
+
+@media screen and (min-width: 800px) {
+  #chk-burger:checked ~ .menu-principal-container {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .menu {
@@ -763,6 +773,7 @@ Navigation catégorie cours
   border-left: 3px solid #222426;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
+  border-bottom: 3px solid #222426;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -808,6 +819,13 @@ Navigation catégorie cours
 
 .menu-accueil-container .menu {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu {
+    flex-direction: row;
+  }
 }
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone {
@@ -836,8 +854,16 @@ Navigation catégorie cours
   justify-content: space-between;
   align-items: center;
   background-color: #3674ED;
-  width: 25%;
-  height: 200px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu .menu-item {
+    width: 25%;
+    height: 200px;
+  }
 }
 
 .menu-accueil-container .menu .menu-item a {
@@ -929,10 +955,11 @@ Navigation catégorie cours
 
 .site__footer h2 {
   font-size: clamp(1.5rem, 2vw, 2rem);
+  text-align: center;
 }
 
 .site__footer h3 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
 }
 
 .site__footer svg {
@@ -941,15 +968,19 @@ Navigation catégorie cours
 
 .site__footer__menu__ul {
   display: flex;
-  justify-content: center;
-  width: 60%;
+  justify-content: flex-start;
 }
 
 .site__footer__menu__ul ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__menu__ul ul {
+    justify-content: center;
+  }
 }
 
 .site__footer__menu__ul a {
@@ -969,6 +1000,8 @@ Navigation catégorie cours
   margin-top: 1rem;
   border-top: 2px solid #CF59D3;
   border-bottom: 2px solid #CF59D3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   /** Deuxième boîte avec les widgets **/
   /** Deuxième boîte avec les widgets **/
   /** Troisième boîte avec les widgets **/
@@ -1105,12 +1138,9 @@ header .recherche {
   height: auto;
 }
 
-.boite__modale, .boite__carrousel {
+.boite__modale,
+.boite__carrousel {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  width: 50vw;
-  height: auto;
   border: 3px solid #3674ED;
   background-color: #F2F2F2;
   box-shadow: 10px 10px #3674ED;
@@ -1119,13 +1149,29 @@ header .recherche {
   z-index: 40;
   transform: scale(0);
   transition: transform 0.2s ease-in-out;
+  top: 5%;
+  left: 5%;
+  width: 90vw;
+  height: 90%;
 }
 
-.boite__modale .boite__modale__texte, .boite__carrousel .boite__modale__texte {
+@media screen and (min-width: 800px) {
+  .boite__modale,
+  .boite__carrousel {
+    top: 15%;
+    left: 20%;
+    width: 60vw;
+    height: 70vh;
+  }
+}
+
+.boite__modale .boite__modale__texte,
+.boite__carrousel .boite__modale__texte {
   line-height: 1.5rem;
 }
 
-.boite__modale__fermeture, .boite__carrousel__fermeture {
+.boite__modale__fermeture,
+.boite__carrousel__fermeture {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -1136,6 +1182,12 @@ header .recherche {
 
 .ouvrir {
   transform: scale(1);
+}
+
+.boite__modale {
+  padding-top: 2rem;
+  height: auto;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .fermeture {
@@ -1154,20 +1206,37 @@ header .recherche {
   color: #3674ED;
 }
 
-.boite__carrousel {
-  top: 12.5%;
-  left: 12.5%;
-  width: 75%;
-  height: 75%;
-}
-
-.boite__carrousel img {
+.boite__carrousel__img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.boite__carrousel__img img .derniere-image {
+  object-position: 50% 0%;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  transform: translateX(0);
+}
+
+.boite__carrousel__img .derniere-image {
+  object-position: 50% 0%;
 }
 
 .boite__carrousel__navigation {
@@ -1182,31 +1251,28 @@ header .recherche {
   left: 0;
 }
 
-.boite__carrousel__navigation button {
-  width: 16px;
-  height: 16px;
+.boite__carrousel__navigation .bouton {
+  width: clamp(0.8rem, 3vw, 1.2rem);
+  height: clamp(0.8rem, 3vw, 1.2rem);
+  min-width: 15px;
+  max-height: 15px;
   background-color: #3674ED;
-  border: none;
-  margin: 20px 20px;
+  margin: 10px 10px;
   border-radius: 50%;
   margin-bottom: 30px;
-  box-shadow: 2px 2px #222426;
   transition: 0.2s ease-in-out;
 }
 
-.boite__carrousel__navigation button:focus {
-  background-color: #f2f2f2;
-}
-
 .galerie {
-  width: 95%;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 800px) {
   .galerie {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1219,8 +1285,6 @@ header .recherche {
 }
 
 .home .site__main {
-  justify-content: center;
-  align-items: center;
   cursor: none;
 }
 
@@ -1275,31 +1339,30 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .curseur {
-  height: 1.5rem;
-  width: 1.5rem;
-  border: 2px solid #F2F2F2;
+  height: 2rem;
+  width: 2rem;
   background-color: #222426;
   border-radius: 50%;
+  border-bottom: 3px solid #F2F2F2;
   position: fixed;
-  top: -1.2rem;
-  left: -1.2rem;
-  /*Affichage en avant-plan de toutes les autres éléments HTML*/
+  top: -1rem;
+  left: -1rem;
   z-index: 500;
   pointer-events: none;
   will-change: transform, opacity;
   /*Transition*/
-  transition: transform 0.1s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
+  transition: transform 0.4s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
 }
 
 .curseur::before {
   content: "";
   position: absolute;
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.8rem;
+  width: 0.8rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f9f9f9;
+  background-color: #F2F2F2;
   border-radius: 50%;
 }
 
@@ -1541,10 +1604,19 @@ ANIMATION
   position: relative;
   width: 1.2rem;
   height: 1.2rem;
+  top: 1.5rem;
+  left: -1rem;
   background-color: #222426;
   margin: 1rem;
   border-radius: 10%;
   overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .burger {
+    top: 0;
+    left: 0;
+  }
 }
 
 .burger .burger__ligne {
@@ -1595,26 +1667,6 @@ LAYOUT
   width: 100vw;
   overflow-x: hidden;
   position: relative;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-
-.site ::-webkit-scrollbar {
-  width: 10px;
-}
-
-.site ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.site ::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.site ::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .site__header {
@@ -1625,6 +1677,7 @@ LAYOUT
 .site__barre {
   grid-area: sidebar;
   background-color: #222426;
+  padding: 1rem;
 }
 
 .site__main {
@@ -1640,7 +1693,9 @@ LAYOUT
   color: #222426;
 }
 
-.site__main p, .site__main h2, .site__main section {
+.site__main p,
+.site__main h2,
+.site__main section {
   z-index: 2;
 }
 
@@ -1652,8 +1707,10 @@ LAYOUT
 }
 
 .site__main .wp-block-gallery {
-  width: 90%;
+  max-width: 90%;
   z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .site__footer {
@@ -1697,6 +1754,5 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

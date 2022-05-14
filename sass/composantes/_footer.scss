@@ -1,119 +1,123 @@
  /** Style du footer **/
-.site__footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #F2F2F2;
-  padding-bottom: 1rem;
+ .site__footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #F2F2F2;
+   padding-bottom: 1rem;
 
-  h2 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
-  }
+   h2 {
+     font-size: clamp(1.5rem, 2vw, 2rem);
+     text-align: center;
+   }
 
-  h3 {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-  }
+   h3 {
+     font-size: clamp(0.9rem, 2vw, 1.5rem);
+   }
 
-  svg {
-    color: $color__link__footer-font
-  }
+   svg {
+     color: $color__link__footer-font
+   }
 
-  &__menu__ul {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-   
-  }
+   &__menu__ul {
+     display: flex;
+     justify-content: flex-start;
+   }
 
-  &__menu__ul ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+   &__menu__ul ul {
+     list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
 
-  &__menu__ul a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+     @media screen and (min-width: $largeur__media--tablette) {
+       justify-content: center;
+     }
+   }
 
-  &__colonne {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    gap: 1rem;
-    width: 85%;
-    margin-top: 1rem;
-    border-top: 2px solid #CF59D3;
-    border-bottom: 2px solid #CF59D3;
+   &__menu__ul a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
-    @media screen and (min-width : $largeur__media--tablette) {
-        flex-direction: row;
-        width: 100vw;
-        gap: 2rem;
-        padding-top: 1rem;
-    }
+   }
 
-    section {
-      display: flex;
-      flex-direction: column;
-      flex: 0 0 30%;
-      width: 100%;
-      background-color: $color__footer-background;
-      padding-left: 1rem;
-      color: $color__font-footer;
-    }
+   &__colonne {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     gap: 1rem;
+     width: 85%;
+     margin-top: 1rem;
+     border-top: 2px solid #CF59D3;
+     border-bottom: 2px solid #CF59D3;
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+
+     @media screen and (min-width : $largeur__media--tablette) {
+       flex-direction: row;
+       width: 100vw;
+       gap: 2rem;
+       padding-top: 1rem;
+     }
+
+     section {
+       display: flex;
+       flex-direction: column;
+       flex: 0 0 30%;
+       width: 100%;
+       background-color: $color__footer-background;
+       padding-left: 1rem;
+       color: $color__font-footer;
+     }
 
      /** Deuxième boîte avec les widgets **/
      section:first-of-type {
-      padding-top: 1rem;
-    }
+       padding-top: 1rem;
+     }
 
      /** Deuxième boîte avec les widgets **/
-    section:nth-of-type(2) {
-      a {
-        color: $color__link__footer;
-      }
+     section:nth-of-type(2) {
+       a {
+         color: $color__link__footer;
+       }
 
-      li {
-        padding: 5px;
-      }
-    }
+       li {
+         padding: 5px;
+       }
+     }
 
-    /** Troisième boîte avec les widgets **/
-    section:nth-of-type(3) {
-      background-color: $color__footer-background;
-      
-      a {
-        color: $color__font-footer;
-        transition: transform 0.3s;
+     /** Troisième boîte avec les widgets **/
+     section:nth-of-type(3) {
+       background-color: $color__footer-background;
 
-        &:hover {
-          background-color: $color__background-link;
-        }
-      }
-    }
+       a {
+         color: $color__font-footer;
+         transition: transform 0.3s;
 
-    &__ligne {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+         &:hover {
+           background-color: $color__background-link;
+         }
+       }
+     }
 
-  #menu-liens_externes {
-    background-color: $color__link__footer-font;
-  }
+     &__ligne {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+   }
 
-}
+   #menu-liens_externes {
+     background-color: $color__link__footer-font;
+   }
 
-/** Icônes du footer **/
-.wp-block-social-link a {
-  background-color: $color__link__footer;
-  border-radius: 50%;
-}
+ }
+
+ /** Icônes du footer **/
+ .wp-block-social-link a {
+   background-color: $color__link__footer;
+   border-radius: 50%;
+ }

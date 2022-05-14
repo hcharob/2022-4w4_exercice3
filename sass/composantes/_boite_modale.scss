@@ -1,6 +1,6 @@
-.boite__modale, .boite__carrousel {
+.boite__modale,
+.boite__carrousel {
     position: fixed;
-    
     border: 3px solid #3674ED;
     background-color: #F2F2F2;
     box-shadow: 10px 10px #3674ED;
@@ -14,11 +14,11 @@
     width: 90vw;
     height: 90%;
 
-    @media screen and (min-width : $largeur__media--tablette){
-    top: 15%;
-    left: 20%;
-    width: 60vw;
-    height: 70vh;
+    @media screen and (min-width : $largeur__media--tablette) {
+        top: 15%;
+        left: 20%;
+        width: 60vw;
+        height: 70vh;
     }
 
     .boite__modale__texte {
@@ -26,12 +26,12 @@
     }
 
     &__fermeture {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
     }
 }
 
@@ -42,11 +42,12 @@
 .boite__modale {
     padding-top: 2rem;
     height: auto;
+    font-size: clamp(0.8rem, 1vw, 1rem)
 }
 
 .fermeture {
     transform: scale(0);
-    
+
 }
 
 .boite__modale__fermeture {
@@ -62,11 +63,8 @@
 }
 
 .boite__carrousel {
-    @media screen and (min-width : $largeur__media--tablette){
-       
-    }
-
-    &__img { //conteneur d'img .boite__carrousel__img
+    &__img {
+        //conteneur d'img .boite__carrousel__img
         position: absolute;
         top: 0;
         left: 0;
@@ -109,6 +107,7 @@
         align-items: center;
         height: 40px;
         left: 0;
+
         .bouton {
             width: clamp(0.8rem, 3vw, 1.2rem);
             height: clamp(0.8rem, 3vw, 1.2rem);
