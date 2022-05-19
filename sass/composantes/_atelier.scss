@@ -1,0 +1,118 @@
+@keyframes animationCouleur {
+    0%{
+        background-position:0% 50%;
+        background-size: 100% 100%;
+
+    }
+    50%{
+        background-position:100% 50%;
+        background-size: 400% 400%;
+    }
+    100%{
+        background-position:0% 50%;
+        background-size: 100% 100%;
+    }
+}
+
+.menu-atelier-container {
+    //nav
+    z-index: 15;
+    padding: 1rem;
+    padding-top: 0;
+    width: 100%;
+
+    .menu {
+        //ul
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width : $largeur__media--tablette) {
+            flex-direction: row;
+        }
+
+        .html_css .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+        }
+
+        .git .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+        }
+
+        .react .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+        }
+
+        .css_avance .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+        }
+
+        .menu-item {
+            //li
+            padding: 1rem;
+            margin: 0 15px 0 15px;
+            transition: box-shadow 0.2s, transform 0.5s;
+            animation: animationCouleur 15s ease-in-out infinite; 
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(270deg, #cf59d3, #3674ed);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 1rem;
+
+            @media screen and (min-width : $largeur__media--tablette) {
+                width: 25%;
+                height: 200px;
+            }
+
+            a {
+                font-size: clamp(1.5rem, 1vw, 2rem);
+                color: #222426;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+
+                .menu-item-description {
+                    font-size: clamp(0.8rem, 1.5vw, 1rem);
+                    text-transform: none;
+                }
+
+                .menu-item-icone {
+                    width: 40px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .menu-item:nth-of-type(2){
+            animation-delay: 1s;
+        }
+
+        .menu-item:nth-of-type(3){
+            animation-delay: 2s;
+        }
+
+        .menu-item:nth-of-type(4){
+            animation-delay: 3s;
+        }
+
+        hr {
+            width: 100%;
+            color: #222426;
+        }
+    }
+
+    .menu-item:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px #3D8BF2;
+    }
+}
+

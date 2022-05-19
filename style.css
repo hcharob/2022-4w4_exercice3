@@ -1366,6 +1366,124 @@ html ::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
 }
 
+@keyframes animationCouleur {
+  0% {
+    background-position: 0% 50%;
+    background-size: 100% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-size: 400% 400%;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-size: 100% 100%;
+  }
+}
+
+.menu-atelier-container {
+  z-index: 15;
+  padding: 1rem;
+  padding-top: 0;
+  width: 100%;
+}
+
+.menu-atelier-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-atelier-container .menu {
+    flex-direction: row;
+  }
+}
+
+.menu-atelier-container .menu .html_css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-atelier-container .menu .git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu-atelier-container .menu .react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-atelier-container .menu .css_avance .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-atelier-container .menu .menu-item {
+  padding: 1rem;
+  margin: 0 15px 0 15px;
+  transition: box-shadow 0.2s, transform 0.5s;
+  animation: animationCouleur 15s ease-in-out infinite;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(270deg, #cf59d3, #3674ed);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-atelier-container .menu .menu-item {
+    width: 25%;
+    height: 200px;
+  }
+}
+
+.menu-atelier-container .menu .menu-item a {
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  color: #222426;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-atelier-container .menu .menu-item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  text-transform: none;
+}
+
+.menu-atelier-container .menu .menu-item a .menu-item-icone {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.menu-atelier-container .menu .menu-item:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.menu-atelier-container .menu .menu-item:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.menu-atelier-container .menu .menu-item:nth-of-type(4) {
+  animation-delay: 3s;
+}
+
+.menu-atelier-container .menu hr {
+  width: 100%;
+  color: #222426;
+}
+
+.menu-atelier-container .menu-item:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px #3D8BF2;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
