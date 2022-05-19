@@ -40,6 +40,13 @@
             "menu"=>"evenement",
             "container"=>"nav"));
     ?>
+    <h3>Ateliers</h3>
+    <?php
+    /* ------------------------------------------ menu evenement */
+        wp_nav_menu(array(
+            "menu"=>"atelier",
+            "container"=>"nav"));
+    ?>
 
 
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
