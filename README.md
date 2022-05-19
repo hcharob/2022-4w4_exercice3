@@ -1,5 +1,5 @@
 /**
-Theme Name: 2022-4w4 TP2 - Charbonneau-Robichaud_Hervee
+Theme Name: 2022-4w4 EF - Charbonneau-Robichaud_Hervee
 Author: Hervee Charbonneau-Robichaud
 Author URI: https://github.com/hcharob/2022-4w4_tp2
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
